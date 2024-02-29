@@ -2,94 +2,94 @@
   {
     "id": 1,
     "item": "Stylish Blouser",
-    "description": "This is a test item.",
+    "description": "Style and versatility? This tee does it all - 95% Cotton 5% Elastane.",
     "image": "",
-    "price": 5.99,
-    "category": "test"
+    "price": 20.00,
+    "category": "Tops and T-Shirts"
   },
 
   {
     "id": 2,
-    "item": "Stylish Blouser",
-    "description": "This is a test item.",
+    "item": "Acid Wash T-Shirt",
+    "description": "Give your casj looks a cool twist with this oversized tee - 95% Cotton 5% Elastane",
     "image": "",
-    "price": 5.99,
-    "category": "test"
+    "price": 15.00,
+    "category": "Tops and T-Shirts"
   },
 
   {
     "id": 3,
-    "item": "Stylish Blouser",
-    "description": "This is a test item.",
+    "item": "Cotton Blend V-Neck T-Shirt",
+    "description": "This oversized tee is the key to unlocking your sporty style - 50% Cotton 50% Modal",
     "image": "",
-    "price": 5.99,
-    "category": "test"
+    "price": 14.00,
+    "category": "Tops and T-Shirts"
   },
 
   {
     "id": 4,
-    "item": "Stylish Blouser",
-    "description": "This is a test item.",
+    "item": "Oversized Short Sleeve T-Shirt",
+    "description": "Time to embrace comfort and style with our oversized tee - 100% Cotton",
     "image": "",
-    "price": 5.99,
-    "category": "test"
+    "price": 25.99,
+    "category": "Tops and T-Shirts"
   },
 
   {
     "id": 5,
-    "item": "Stylish Blouser",
-    "description": "This is a test item.",
+    "item": "Ribbed Scoop Neck Cropped T-Shirt",
+    "description": "This baby tee is one piece you'll want to scoop into your basket - 63% Polyester 33% Viscose 4% Elastane",
     "image": "",
-    "price": 5.99,
-    "category": "test"
+    "price": 29.00,
+    "category": "Tops and T-Shirts"
   },
 
   {
     "id": 6,
-    "item": "Stylish Blouser",
-    "description": "This is a test item.",
+    "item": "Oversized Graphic T-Shirt",
+    "description": "This T-Shirt smells like a style statement to us! - 100% Cotton",
     "image": "",
-    "price": 5.99,
-    "category": "test"
+    "price": 17.00,
+    "category": "Tops and T-Shirts"
   },
   {
     "id": 7,
-    "item": "Stylish Blouser",
-    "description": "This is a test item.",
+    "item": "The Edit Oversized T-Shirt",
+    "description": "The ultimate oversized tee for effortless everyday looks - 60% Viscose 34% Nylon 6% Elastane",
     "image": "",
-    "price": 5.99,
-    "category": "test"
+    "price": 8.00,
+    "category": "Tops and T-Shirts"
   },
   {
     "id": 8,
-    "item": "Stylish Blouser",
-    "description": "This is a test item.",
+    "item": "The Edit Oversized T-Shirt",
+    "description": "The ultimate oversized tee for effortless everyday looks - 60% Viscose 34% Nylon 6% Elastane",
     "image": "",
-    "price": 5.99,
-    "category": "test"
+    "price": 10.00,
+    "category": "Tops and T-Shirts"
   },
   {
     "id": 9,
-    "item": "Stylish Blouser",
-    "description": "This is a test item.",
+    "item": "Seamfree Scoop Neck Bodysuit",
+    "description": "The perfect tucked, layered look is effortless with this bodysuit - 94% Nylon 6% Elastane",
     "image": "",
-    "price": 5.99,
-    "category": "test"
+    "price": 12.00,
+    "category": "Tops and T-Shirts"
   },
   {
     "id": 10,
-    "item": "Stylish Blouser",
-    "description": "This is a test item.",
+    "item": "Scoop Neck Ribbed Bodysuit",
+    "description": "Dress this bodysuit up or down - 95% Nylon 5% Elastane",
     "image": "",
-    "price": 5.99,
-    "category": "test"
+    "price": 10.00,
+    "category": "Tops and T-Shirts"
   },
   {
     "id": 11,
-    "item": "Stylish Blouser",
-    "description": "This is a test item.",
+    "item": "Diamond Knit Tank",
+    "description": "You've just discovered a summer knitwear diamond - 83% Cotton 17% Polyester",
     "image": "",
-    "price": 5.99,
+    "price": 12.00,
     "category": "test"
   },
   {
