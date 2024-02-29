@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "item": "Chenille T-shirt",
+    "description": "A boxy tee made from super soft chenille - 100% Polyester",
+    "image": "",
+    "price": 10.00,
+    "category": "Tops & T-Shirts"
+  },
+
+  {
+    "id": 2,
+    "item": "Co-Ord Acid Wash T-shirt",
+    "description": "When it comes to style and versatility, this tee can do it all! - 95% Cotton, 5% Elastane.",
+    "image": "",
+    "price": 12.00,
+    "category": "Tops & T-Shirts"
+  },
+
+  {
+    "id": 3,
+    "item": "Paula Echevarría Coordinates T-Shirt",
+    "description": "We think you can coordinate an outfit with this tee - 50% Cotton, 50%  Polyester",
+    "image": "",
+    "price": 14.00,
+    "category": "Tops & T-Shirts"
+  },
+
+  {
+    "id": 4,
+    "item": "Oversized Short Sleeve T-Shirt",
+    "description": "The trendy tee you can rely on time and time again! - 100% Cotton",
+    "image": "",
+    "price": 24.00,
+    "category": "Tops & T-Shirts"
+  },
+
+  {
+    "id": 5,
+    "item": "Ribbed Scoop Neck Cropped T-Shirt",
+    "description": "This baby tee is one piece you'll want to scoop into your basket! - 63% Polyester, 33% Viscose,  4% Elastane",
+    "image": "",
+    "price": 22.00,
+    "category": "Tops & T-Shirts"
+  },
+
+  {
+    "id": 6,
+    "item": "Crewneck Boxy T-Shirt",
+    "description": "Take your everyday essentials to a new level with this stretch T-shirt - 100% Cotton ",
+    "image": "",
+    "price": 14.00,
+    "category": "Tops & T-Shirts"
+  },
+  {
+    "id": 7,
+    "item": "Paula Echevarría Padded Racer Vest",
+    "description": "Add a supportive touch to your casual wardrobe with our padded vest! - 96% Cotton, 4% Elastane",
+    "image": "",
+    "price": 13.00,
+    "category": "Tops & T-Shirts"
+  },
+  {
+    "id": 8,
+    "item": "Oversized Graphic T-Shirt",
+    "description": "This tee smells like a style statement to us! - 100% Cotton",
+    "image": "",
+    "price": 17.00,
+    "category": "Tops & T-Shirts"
+  },
+  {
+    "id": 9,
+    "item": "2pk Stretch Vests",
+    "description": "Time to refresh your vests! - 95% Cotton, 5% Elastane",
+    "image": "",
+    "price": 20.00,
+    "category": "Tops & T-Shirts"
+  },
+  {
+    "id": 10,
+    "item": "Performance Crop Top",
+    "description": "Slay your next workout class with this sleek sports bra! - Polyester 87% Elastane 13%",
+    "image": "",
+    "price": 22.00,
+    "category": "Tops & T-Shirts"
+  },
+  {
+    "id": 11,
+    "item": "Stylish Blouser",
+    "description": "This is a test item.",
+    "image": "",
+    "price": 16.00,
+    "category": "test"
+  },
+  {
+    "id": 12,
+    "item": "Stylish Blouser",
+    "description": "This is a test item.",
+    "image": "",
+    "price": 5.99,
+    "category": "test"
+  },
+  {
+    "id": 13,
+    "item": "Stylish Blouser",
+    "description": "This is a test item.",
+    "image": "",
+    "price": 5.99,
+    "category": "test"
+  },
+  {
+    "id": 14,
+    "item": "Stylish Blouser",
+    "description": "This is a test item.",
+    "image": "",
+    "price": 5.99,
+    "category": "test"
+  },
+  {
+    "id": 15,
+    "item": "Stylish Blouser",
+    "description": "This is a test item.",
+    "image": "",
+    "price": 5.99,
+    "category": "test"
+  },
+  {
+    "id": 16,
+    "item": "Stylish Blouser",
+    "description": "This is a test item.",
+    "image": "",
+    "price": 5.99,
+    "category": "test"
+  },
+  {
+    "id": 17,
+    "item": "Stylish Blouser",
+    "description": "This is a test item.",
+    "image": "",
+    "price": 5.99,
+    "category": "test"
+  },
+  {
+    "id": 18,
+    "item": "Stylish Blouser",
+    "description": "This is a test item.",
+    "image": "",
+    "price": 5.99,
+    "category": "test"
+  },
+  {
+    "id": 19,
+    "item": "Stylish Blouser",
+    "description": "This is a test item.",
+    "image": "",
+    "price": 5.99,
+    "category": "test"
+  },
+  {
+    "id": 20,
+    "item": "Stylish Blouser",
+    "description": "This is a test item.",
+    "image": "",
+    "price": 5.99,
+    "category": "test"
+  }
+]
