@@ -5,8 +5,8 @@ const Nav = () => {
     return (
         <nav>
             <div className="container mx-auto justify-between md:felx hidden">
-              <a href="" className="my-2 flex items-end gap-3">
-              <img src={logo} alt="logo" height={71} width={71} />
+                <a href="" className="my-2 flex items-end gap-3">
+                    <img src={logo} alt="logo" height={71} width={71} />
                 </a>
                 <ul>
                     <li> <a href="#home">Home</a></li>
