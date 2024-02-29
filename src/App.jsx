@@ -1,6 +1,6 @@
 function App() {
   return (
-    <div className="h-20 w-20 bg-red-800"> 
+    <div className="relative"> 
     <h1>Hello </h1>
     </div>
   )
