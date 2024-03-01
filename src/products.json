@@ -86,82 +86,106 @@
   },
   {
     "id": 11,
-    "item": "Stylish Blouser",
-    "description": "This is a test item.",
-    "image": "",
-    "price": 16.00,
-    "category": "test"
+    "item": "Short Sleeve Shirt with abstract pattern",
+    "description": "Short Sleeve Shirt with abstract pattern, perfect for a casual, comfortable look.",
+    "image": "src/assets/images/Men/Shirts/shirtMen19.jpg",
+    "price": 20,
+    "category": "shirts"
   },
   {
     "id": 12,
-    "item": "Stylish Blouser",
-    "description": "This is a test item.",
-    "image": "",
-    "price": 5.99,
-    "category": "test"
+    "item": "Denim Shirt - Denim Blue",
+    "description": "This chambray shirt offers a soft feel and year-round styling potential, perfect for casual weekends of social events.",
+    "image": "src/assets/images/Men/Shirts/shirtMen5.jpg",
+    "price": 27,
+    "category": "shirts"
   },
   {
     "id": 13,
-    "item": "Stylish Blouser",
-    "description": "This is a test item.",
-    "image": "",
-    "price": 5.99,
-    "category": "test"
+    "item": "Brushed Flannel Check Shirt - Red",
+    "description": "This brushed 100% cotton shirt offers ultimate comfort with a timeless plaid pattern, perfect for versatile styling from casual days to layered outfits",
+    "image": "src/assets/images/Men/Shirts/shirtMen7.jpg",
+    "price": 29,
+    "category": "shirts"
   },
   {
     "id": 14,
-    "item": "Stylish Blouser",
-    "description": "This is a test item.",
-    "image": "",
-    "price": 5.99,
-    "category": "test"
+    "item": "Collarless Cotton Linen Shirt - Brown",
+    "description": "A collarless poplin shirt, breathable and soft, offers laid-back style and a contemporary alternative to traditional button-downs.",
+    "image": "src/assets/images/Men/Shirts/shirtMen16.jpg",
+    "price": 32,
+    "category": "shirts"
   },
   {
     "id": 15,
-    "item": "Stylish Blouser",
-    "description": "This is a test item.",
-    "image": "",
-    "price": 5.99,
-    "category": "test"
+    "item": "Jeans Shirt Long Sleeve Denim - Blue",
+    "description": "A versatile long-sleeved button shirt with plaid or solid colors, ideal for daily wear, easily paired with pants or jeans for a stylish look.",
+    "image": "src/assets/images/Men/Shirts/shirtMen17.jpg",
+    "price": 26,
+    "category": "shirts"
   },
   {
     "id": 16,
-    "item": "Stylish Blouser",
-    "description": "This is a test item.",
-    "image": "",
-    "price": 5.99,
-    "category": "test"
+    "item": "Button-Down Collar Dobby Flannel Shirt - Oatmeal",
+    "description": "A shirt with exceptional handfeel and a heavier weight featuring a button-down collar, perfect for a casual, comfortable look.",
+    "image": "src/assets/images/Men/Shirts/shirtMen10.jpg",
+    "price": 34,
+    "category": "shirts"
   },
   {
     "id": 17,
-    "item": "Stylish Blouser",
-    "description": "This is a test item.",
-    "image": "",
-    "price": 5.99,
-    "category": "test"
+    "item": "Navy blue shirt with printed pattern - Blue",
+    "description": "Cotton navy blue shirt with printed pattern.",
+    "image": "src/assets/images/Men/Shirts/shirtMen2.jpg",
+    "price": 32,
+    "category": "shirts"
   },
   {
     "id": 18,
-    "item": "Stylish Blouser",
-    "description": "This is a test item.",
-    "image": "",
-    "price": 5.99,
-    "category": "test"
+    "item": "Twill Shirt - White",
+    "description": "Crafted from soft, pure cotton with a robust yet supple weave, this shirt embodies tradition and innovation.",
+    "image": "src/assets/images/Men/Shirts/shirtMen18.jpg",
+    "price": 27,
+    "category": "shirts"
   },
   {
     "id": 19,
-    "item": "Stylish Blouser",
-    "description": "This is a test item.",
-    "image": "",
-    "price": 5.99,
-    "category": "test"
+    "item": "Organic Cotton Essential T-Shirt - Black",
+    "description": "Wearable and breathable, our combed cotton tees are a favourite year after year.",
+    "image": "src/assets/images/Men/Tshirts/t-shirtMen2.jpg",
+    "price": 22,
+    "category": "tshirts"
   },
   {
     "id": 20,
-    "item": "Stylish Blouser",
-    "description": "This is a test item.",
-    "image": "",
-    "price": 5.99,
-    "category": "test"
+    "item": "Mens Floral Print T Shirt - White",
+    "description": "Elevate your style with the breathable and effortlessly wearable floral print cotton tees for men.",
+    "image": "src/assets/images/Men/Tshirts/t-shirtMen3.jpg",
+    "price": 19,
+    "category": "tshirts"
+  },
+  {
+    "id": 21,
+    "item": "Money Heist T shirt - Blue",
+    "description": "Discover trendy Money Heist-themed shirts, crafted from high-quality 100% cotton with lasting prints.",
+    "image": "src/assets/images/Men/Tshirts/t-shirtMen4.jpg",
+    "price": 21,
+    "category": "tshirts"
+  },
+  {
+    "id": 22,
+    "item": "Son Goku shirt, Dragon Ball Z T shirt - Black",
+    "description": "Discover trendy Dragon Ball Z themed shirts, crafted from high-quality 100% cotton with lasting prints.",
+    "image": "src/assets/images/Men/Tshirts/t-shirtMen5.jpg",
+    "price": 23,
+    "category": "tshirts"
+  },
+  {
+    "id": 23,
+    "item": "Fragun T shirt - Green",
+    "description": "Green cotton T shirt.",
+    "image": "src/assets/images/Men/Tshirts/t-shirtMen8.jpg",
+    "price": 20,
+    "category": "tshirts"
   }
 ]
