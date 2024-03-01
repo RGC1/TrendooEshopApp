@@ -20,7 +20,7 @@ const Subscribe = () => {
 
   // Function to handle subscription submission
   const handleSubscriptionSubmit = () => {
-    // You can handle the subscription data as needed, for example, send it to a server
+    // You can handle the subscription data as needed, send it to a server
     console.log('Subscription submitted:', subscriptionData);
     // Reset the input fields after submission
     setSubscriptionData({
@@ -39,6 +39,7 @@ const Subscribe = () => {
   };
 
   return (
+    
     <section id="contact-us" className="max-container flex flex-col items-center gap-10">
       <h3 className="text-4xl leading-[68px] text-center font-bold">
         CONNECT WITH US ON
@@ -83,6 +84,7 @@ const Subscribe = () => {
         </button>
       </div>
     </section>
+    
   );
 };
 
