@@ -1,95 +1,95 @@
 [
   {
     "id": 1,
-    "item": "Stylish Blouser",
-    "description": "Style and versatility? This tee does it all - 95% Cotton 5% Elastane.",
+    "item": "Chenille T-shirt",
+    "description": "A boxy tee made from super soft chenille - 100% Polyester",
     "image": "",
-    "price": 20.00,
-    "category": "Tops and T-Shirts"
+    "price": 10.00,
+    "category": "Tops & T-Shirts"
   },
 
   {
     "id": 2,
-    "item": "Acid Wash T-Shirt",
-    "description": "Give your casj looks a cool twist with this oversized tee - 95% Cotton 5% Elastane",
+    "item": "Co-Ord Acid Wash T-shirt",
+    "description": "When it comes to style and versatility, this tee can do it all! - 95% Cotton, 5% Elastane.",
     "image": "",
-    "price": 15.00,
-    "category": "Tops and T-Shirts"
+    "price": 12.00,
+    "category": "Tops & T-Shirts"
   },
 
   {
     "id": 3,
-    "item": "Cotton Blend V-Neck T-Shirt",
-    "description": "This oversized tee is the key to unlocking your sporty style - 50% Cotton 50% Modal",
+    "item": "Paula Echevarría Coordinates T-Shirt",
+    "description": "We think you can coordinate an outfit with this tee - 50% Cotton, 50%  Polyester",
     "image": "",
     "price": 14.00,
-    "category": "Tops and T-Shirts"
+    "category": "Tops & T-Shirts"
   },
 
   {
     "id": 4,
     "item": "Oversized Short Sleeve T-Shirt",
-    "description": "Time to embrace comfort and style with our oversized tee - 100% Cotton",
+    "description": "The trendy tee you can rely on time and time again! - 100% Cotton",
     "image": "",
-    "price": 25.99,
-    "category": "Tops and T-Shirts"
+    "price": 24.00,
+    "category": "Tops & T-Shirts"
   },
 
   {
     "id": 5,
     "item": "Ribbed Scoop Neck Cropped T-Shirt",
-    "description": "This baby tee is one piece you'll want to scoop into your basket - 63% Polyester 33% Viscose 4% Elastane",
+    "description": "This baby tee is one piece you'll want to scoop into your basket! - 63% Polyester, 33% Viscose,  4% Elastane",
     "image": "",
-    "price": 29.00,
-    "category": "Tops and T-Shirts"
+    "price": 22.00,
+    "category": "Tops & T-Shirts"
   },
 
   {
     "id": 6,
-    "item": "Oversized Graphic T-Shirt",
-    "description": "This T-Shirt smells like a style statement to us! - 100% Cotton",
+    "item": "Crewneck Boxy T-Shirt",
+    "description": "Take your everyday essentials to a new level with this stretch T-shirt - 100% Cotton ",
     "image": "",
-    "price": 17.00,
-    "category": "Tops and T-Shirts"
+    "price": 14.00,
+    "category": "Tops & T-Shirts"
   },
   {
     "id": 7,
-    "item": "The Edit Oversized T-Shirt",
-    "description": "The ultimate oversized tee for effortless everyday looks - 60% Viscose 34% Nylon 6% Elastane",
+    "item": "Paula Echevarría Padded Racer Vest",
+    "description": "Add a supportive touch to your casual wardrobe with our padded vest! - 96% Cotton, 4% Elastane",
     "image": "",
-    "price": 8.00,
-    "category": "Tops and T-Shirts"
+    "price": 13.00,
+    "category": "Tops & T-Shirts"
   },
   {
     "id": 8,
-    "item": "The Edit Oversized T-Shirt",
-    "description": "The ultimate oversized tee for effortless everyday looks - 60% Viscose 34% Nylon 6% Elastane",
+    "item": "Oversized Graphic T-Shirt",
+    "description": "This tee smells like a style statement to us! - 100% Cotton",
     "image": "",
-    "price": 10.00,
-    "category": "Tops and T-Shirts"
+    "price": 17.00,
+    "category": "Tops & T-Shirts"
   },
   {
     "id": 9,
-    "item": "Seamfree Scoop Neck Bodysuit",
-    "description": "The perfect tucked, layered look is effortless with this bodysuit - 94% Nylon 6% Elastane",
+    "item": "2pk Stretch Vests",
+    "description": "Time to refresh your vests! - 95% Cotton, 5% Elastane",
     "image": "",
-    "price": 12.00,
-    "category": "Tops and T-Shirts"
+    "price": 20.00,
+    "category": "Tops & T-Shirts"
   },
   {
     "id": 10,
-    "item": "Scoop Neck Ribbed Bodysuit",
-    "description": "Dress this bodysuit up or down - 95% Nylon 5% Elastane",
+    "item": "Performance Crop Top",
+    "description": "Slay your next workout class with this sleek sports bra! - Polyester 87% Elastane 13%",
     "image": "",
-    "price": 10.00,
-    "category": "Tops and T-Shirts"
+    "price": 22.00,
+    "category": "Tops & T-Shirts"
   },
   {
     "id": 11,
-    "item": "Diamond Knit Tank",
-    "description": "You've just discovered a summer knitwear diamond - 83% Cotton 17% Polyester",
+    "item": "Stylish Blouser",
+    "description": "This is a test item.",
     "image": "",
-    "price": 12.00,
+    "price": 16.00,
     "category": "test"
   },
   {
