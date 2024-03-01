@@ -16,7 +16,6 @@ function App() {
     <div className="relative"> 
 
       <MyNav/>
-      <h1> Hello </h1>
       <Hero/>
       <ProductsGallery/>
       {/* <Favourites/> */}
