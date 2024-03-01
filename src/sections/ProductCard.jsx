@@ -3,7 +3,13 @@ import React, { useState } from 'react';
 
 function ProductCard({ product }) {
 
+    const [isDescriptionVisible, setDescriptionVisible] = useState(false);
+
     const [isFavorite, setIsFavorite] = useState(false);
+
+    const toggleDescription = () => {
+        setDescriptionVisible(!isDescriptionVisible);
+    };
 
     const toggleFavorite = () => {
         setIsFavorite(!isFavorite);
@@ -13,15 +19,25 @@ function ProductCard({ product }) {
         <div
             className="cardContainer block max-w-[18rem] rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
             <div className="relative overflow-hidden bg-cover bg-no-repeat">
+
                 <img
                     className="imageCard rounded-t-lg"
                     src={product.image}
                     alt="" />
+
+                {/* Code for let the description appearing when the show more info button is pressed */}
+                {isDescriptionVisible && (
+                    <div className="absolute bottom-0 left-0 right-0 p-4 bg-white bg-opacity-70 text-base text-gray-900 text-justify">
+                        {product.description}
+                    </div>
+                )}
+
+                {/* Product Price div */}
                 <div className="absolute bottom-0 right-0 p-2 bg-white bg-opacity-55 rounded-tl-lg text-lg font-medium text-gray-900">
                     £{product.price}
                 </div>
 
-                {/* code for heart favourite button */}
+                {/* Code for heart favourite button */}
                 <button
                     type="button"
                     className="absolute top-2 right-2 focus:outline-none"
@@ -45,15 +61,25 @@ function ProductCard({ product }) {
                 </button>
             </div>
 
+            {/* Product name div */}
             <div className="p-6">
                 <h5
                     className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
                     {product.item}
                 </h5>
+
+                {/* Code to toggle description on button click and change button text when description is visible*/}
+                <button
+                    type="button"
+                    className="hover:text-gray-700 focus:outline-none"
+                    onClick={toggleDescription}>
+                    {isDescriptionVisible ? 'Less Info' : 'More Info'}
+                </button>
+
                 {/* <p className="mt-1 text-lg font-medium text-gray-900">£{product.price}</p> */}
-                <p className="text-base text-neutral-600 dark:text-neutral-200">
+                {/* <p className="text-base text-neutral-600 dark:text-neutral-200">
                     {product.description}
-                </p>
+                </p> */}
             </div>
         </div>
 
