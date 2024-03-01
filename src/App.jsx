@@ -2,7 +2,7 @@ import React from 'react'
 import './index.css'
 import CustomerReviews from './sections/CustomerReviews'
 import Hero from './sections/Hero'
-// import Favourites from './sections/Favourites'
+import Favourites from './sections/Favourites'
 import Footer from './sections/Footer'
 import ProductsGallery from './components/ProductsGallery'
 import Subscribe from './sections/Subscribe'
@@ -16,10 +16,9 @@ function App() {
     <div className="relative"> 
 
       <MyNav/>
-      <h1> Hello </h1>
       <Hero/>
       <ProductsGallery/>
-      {/* <Favourites/> */}
+      <Favourites/>
       <CustomerReviews/>
       <Subscribe/>
       <Footer/>
