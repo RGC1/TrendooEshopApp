@@ -16,7 +16,7 @@ function App() {
     <div className="relative"> 
 
       <MyNav/>
-      <h1>Hello </h1>
+      <h1> Hello </h1>
       <Hero/>
       <Products/>
       <Favourites/>
