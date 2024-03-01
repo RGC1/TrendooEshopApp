@@ -28,6 +28,14 @@ const Subscribe = () => {
       youtube: false,
       instagram: false,
     });
+
+    // Open YouTube and Instagram links in new tabs if subscribed
+    if (subscriptionData.youtube) {
+      window.open('https://www.youtube.com/user/trendoo', '_blank');
+    }
+    if (subscriptionData.instagram) {
+      window.open('https://www.instagram.com/trendoo', '_blank');
+    }
   };
 
   return (
