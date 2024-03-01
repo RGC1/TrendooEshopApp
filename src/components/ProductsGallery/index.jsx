@@ -1,6 +1,6 @@
 import React from 'react';
 import products from '../../products.json';
-import ProductCard from '../ProductCard'; // Assuming ProductCard is the correct component
+import ProductCard from '../../sections/ProductCard'; // Assuming ProductCard is the correct component
 
 const ProjectGallery = () => {
   return (
