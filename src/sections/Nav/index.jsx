@@ -1,16 +1,21 @@
-
 import React, { useState } from "react";
 import "./style.css";
 
 import logo from "../../assets/images/Logo.jpg";
 
-const MyNav = () => {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  // Function to toggle the dropdown menu
-  const toggleDropdown = () => {
-    setDropdownOpen(!dropdownOpen);
-  };
+const MyNav = () => {
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+  
+    // Function to open the dropdown menu
+    const openDropdown = () => {
+      setDropdownOpen(true);
+    };
+  
+    // Function to close the dropdown menu
+    const closeDropdown = () => {
+      setDropdownOpen(false);
+    };
 
   return (
     <>
@@ -26,19 +31,20 @@ const MyNav = () => {
               <div className="flex space-x-4"></div>
               <a
                 href="#home"
-                className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium mr-6 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                className=" text-black rounded-md px-3 py-2 text-sm font-medium mr-6 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               >
                 Home
               </a>
               <a
                 href="#about"
-                className="bg-gray-900 text-white rounded-md px-3 py-2 mr-6 text-sm font-medium hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                className=" text-black rounded-md px-3 py-2 mr-6 text-sm font-medium hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               >
                 About us
               </a>
               <button
-                onClick={toggleDropdown} // Add onClick handler to toggle dropdown
-                className="bg-gray-900 text-white rounded-md px-3 py-2 mr-6 text-sm font-medium hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                onMouseEnter={openDropdown} // Add onMouseEnter handler to open dropdown
+                onMouseLeave={closeDropdown} // Add onMouseLeave handler to close dropdown
+                className="text-black rounded-md px-3 py-2 mr-6 text-sm font-medium hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               >
                 Products{" "} 
               </button>
@@ -46,7 +52,9 @@ const MyNav = () => {
               {dropdownOpen && (
                 <div
                   id="dropdownNavbar"
-                  className="z-10 absolute mt-2 w-48 bg-white divide-y divide-gray-100 rounded-lg shadow-lg dark:bg-gray-700 dark:divide-gray-600"
+                  className=" absolute mt-2 w-48 bg-white divide-y divide-gray-100 rounded-lg shadow-lg dark:bg-gray-700 dark:divide-gray-600"
+                  onMouseEnter={openDropdown} // Keep dropdown open when hovering over it
+                  onMouseLeave={closeDropdown} // Close dropdown when mouse leaves it
                 >
                   <ul
                     className="py-2 text-sm text-gray-700 dark:text-gray-400"
@@ -67,13 +75,13 @@ const MyNav = () => {
                       >
                         Men
                       </a>
-                      </li>
+                    </li>
                   </ul>
                 </div>
               )}
               <a
                 href="#contact"
-                className="bg-gray-900 text-white rounded-md px-3 py-2 mr-6 text-sm font-medium hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                className=" text-black rounded-md px-3 py-2 mr-6 text-sm font-medium hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               >
                 Contact Us
               </a>
@@ -86,4 +94,3 @@ const MyNav = () => {
 };
 
 export default MyNav;
-
