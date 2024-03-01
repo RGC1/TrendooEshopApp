@@ -1,26 +1,81 @@
-
-
-
-
+import React, { useState } from 'react';
 
 const Subscribe = () => {
-    return (
-        <section id="contact-us" className="max-container flex justify-evenly items-center max-lg:flex-col gap-10">
+  // State to manage subscription data
+  const [subscriptionData, setSubscriptionData] = useState({
+    email: '',
+    youtube: false,
+    instagram: false,
+  });
 
-            <h3 className="text-4xl leading-[68px] lg:max-w-md font-bold"> 
-            Sign up for more
-            <span className="text-purple-900"> Updates </span>& Newsletter
-            </h3>
-            
-            <div className="lg:max-w-[40%] w-full flex items-center max-sm:flex-col gap-5 p-2.5 sm:border sm:border-slate-gray rounded-full"><input type="text"  placeholder="subscribe@trendoo.com" className="input"/>
-                <div className="flex max-sm:justify-end items-center max-sm:w-full"> 
-                    {/* <Button label="Sign Up" fullWidth /> */}
-                </div>
-            </div>
+  // Function to handle input changes
+  const handleInputChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    // Handle checkbox inputs separately
+    setSubscriptionData((prevData) => ({
+      ...prevData,
+      [name]: type === 'checkbox' ? checked : value,
+    }));
+  };
 
-        </section>
+  // Function to handle subscription submission
+  const handleSubscriptionSubmit = () => {
+    // You can handle the subscription data as needed, for example, send it to a server
+    console.log('Subscription submitted:', subscriptionData);
+    // Reset the input fields after submission
+    setSubscriptionData({
+      email: '',
+      youtube: false,
+      instagram: false,
+    });
+  };
 
-    )
-}
+  return (
+    <section id="contact-us" className="max-container flex flex-col items-center gap-10">
+      <h3 className="text-4xl leading-[68px] text-center font-bold">
+        CONNECT WITH US ON
+        <span className="text-purple-400 text-4xl leading-[68px] text-center font-bold"> SOCIAL MEDIA</span>
+      </h3>
 
-export default Subscribe
+      <div className="lg:max-w-[40%] w-full flex items-center flex-col gap-5 p-2.5 sm:border sm:border-slate-gray rounded-full">
+        <input
+          type="text"
+          placeholder="subscribe@trendoo.com"
+          className="input"
+          name="email"
+          value={subscriptionData.email}
+          onChange={handleInputChange}
+        />
+        <div className="flex items-center gap-2">
+          {/* YouTube Checkbox */}
+          <label className="flex items-center">
+            <input
+              type="checkbox"
+              name="youtube"
+              checked={subscriptionData.youtube}
+              onChange={handleInputChange}
+              className="form-checkbox text-purple-700"
+            />
+            <span className="text-purple-700 hover:underline ml-2">YouTube</span>
+          </label>
+          {/* Instagram Checkbox */}
+          <label className="flex items-center">
+            <input
+              type="checkbox"
+              name="instagram"
+              checked={subscriptionData.instagram}
+              onChange={handleInputChange}
+              className="form-checkbox text-purple-700"
+            />
+            <span className="text-purple-700 hover:underline ml-2">Instagram</span>
+          </label>
+        </div>
+        <button className="button px-6 py-3" onClick={handleSubscriptionSubmit}>
+          Subscribe
+        </button>
+      </div>
+    </section>
+  );
+};
+
+export default Subscribe;
