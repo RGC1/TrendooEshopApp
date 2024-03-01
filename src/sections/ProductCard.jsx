@@ -1,0 +1,63 @@
+import React, { useState } from 'react';
+
+
+function ProductCard({ product }) {
+
+    const [isFavorite, setIsFavorite] = useState(false);
+
+    const toggleFavorite = () => {
+        setIsFavorite(!isFavorite);
+    };
+
+    return (
+        <div
+            className="cardContainer block max-w-[18rem] rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+            <div className="relative overflow-hidden bg-cover bg-no-repeat">
+                <img
+                    className="imageCard rounded-t-lg"
+                    src={product.image}
+                    alt="" />
+                <div className="absolute bottom-0 right-0 p-2 bg-white bg-opacity-55 rounded-tl-lg text-lg font-medium text-gray-900">
+                    £{product.price}
+                </div>
+
+                {/* code for heart favourite button */}
+                <button
+                    type="button"
+                    className="absolute top-2 right-2 focus:outline-none"
+                    onClick={toggleFavorite}>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className={`h-8 w-8 ${isFavorite ? 'text-red-500' : 'text-gray-500'}`}
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d={
+                                isFavorite
+                                    ? 'M12 21l-1.314-1.257C5.486 15.314 2 12.101 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.321.894 4.5 2.278C12.179 3.894 13.759 3 15.5 3 18.58 3 21 5.42 21 8.5c0 3.601-3.486 6.814-8.686 11.243L12 21z'
+                                    : 'M12 21l-1.314-1.257C5.486 15.314 2 12.101 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.321.894 4.5 2.278C12.179 3.894 13.759 3 15.5 3 18.58 3 21 5.42 21 8.5c0 3.601-3.486 6.814-8.686 11.243L12 21z'
+                            } />
+                    </svg>
+                </button>
+            </div>
+
+            <div className="p-6">
+                <h5
+                    className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                    {product.item}
+                </h5>
+                {/* <p className="mt-1 text-lg font-medium text-gray-900">£{product.price}</p> */}
+                <p className="text-base text-neutral-600 dark:text-neutral-200">
+                    {product.description}
+                </p>
+            </div>
+        </div>
+
+    );
+}
+
+export default ProductCard;
