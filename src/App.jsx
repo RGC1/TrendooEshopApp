@@ -2,9 +2,9 @@ import React from 'react'
 import './index.css'
 import CustomerReviews from './sections/CustomerReviews'
 import Hero from './sections/Hero'
-import Favourites from './sections/Favourites'
+// import Favourites from './sections/Favourites'
 import Footer from './sections/Footer'
-import Products from './sections/Products'
+import ProductsGallery from './components/ProductsGallery'
 import Subscribe from './sections/Subscribe'
 import MyNav from './sections/Nav'
 
@@ -18,8 +18,8 @@ function App() {
       <MyNav/>
       <h1> Hello </h1>
       <Hero/>
-      <Products/>
-      <Favourites/>
+      <ProductsGallery/>
+      {/* <Favourites/> */}
       <CustomerReviews/>
       <Subscribe/>
       <Footer/>

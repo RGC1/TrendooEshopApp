@@ -1,4 +1,4 @@
-import logo from '../../assets/images/logo.jpg'
+// import logo from '../../assets/images/logo.jpg'
 
 
 
@@ -9,7 +9,7 @@ const Footer = () => {
 
                 <div> 
                     <a href="/">
-                     <img src={logo} alt="" width={250} height={46} />
+                     {/* <img src={logo} alt="" width={250} height={46} /> */}
                     </a>
                     <p className="mt-6 text-base leading-7 font-alegreya text-white-400 sm:max-w-sm"> 
                     Some text here
