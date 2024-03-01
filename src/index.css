@@ -6,7 +6,58 @@
 @tailwind utilities;
 
 
+/*at-rule used to declare a cascade layer - defining styles within the “components” layer*/
+
+@layer components{
+    .max-container{
+      max-width: 1440px; 
+      margin: 0 auto;
+    }
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    resize: none;
+  }
+
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Alegreya', sans-serif;
+    line-height: 1.5;
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    margin: 0 auto;
+    width: 85%;
+}
+
+section {
+    padding: 4rem 0 3rem;
+}
+
+a, span, p {
+    color: var(--color-text);
+    font-size: .9rem;
+}
+
+
+
+
+#home{
+    background: url(./assets/images/bg.png);
+    background-position: center;
+    background-size: cover;
 }

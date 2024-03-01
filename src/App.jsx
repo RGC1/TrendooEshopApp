@@ -1,5 +1,5 @@
 import React from 'react'
-import './App.css'
+import './index.css'
 import CustomerReviews from './sections/CustomerReviews'
 import Hero from './sections/Hero'
 import Favourites from './sections/Favourites'
