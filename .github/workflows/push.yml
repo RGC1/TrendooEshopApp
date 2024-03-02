@@ -21,7 +21,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v1
       # Install NodeJS
-      - name: Use Node.js 20.x
+      - name: Use Node.js 20
         uses: actions/setup-node@v2
         with:
           node-version: 20.x
