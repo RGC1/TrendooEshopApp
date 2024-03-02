@@ -77,6 +77,12 @@ const MyNav = () => {
               >
                 Contact Us
               </a>
+              {/* <a
+                href="#favorites"
+                className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium mr-6 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              >
+            Favorites 
+              </a> */}
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-// import logo from '../../assets/images/logo.jpg'
+// import logo from '../../assets/images/'
 
 
 
@@ -11,8 +11,8 @@ const Footer = () => {
                     <a href="/">
                      {/* <img src={logo} alt="" width={250} height={46} /> */}
                     </a>
-                    <p className="mt-6 text-base leading-7 font-alegreya text-white-400 sm:max-w-sm"> 
-                    Some text here
+                    <p className="mt-6 text-base leading-7 font-alegreya-bold text-white-400 sm:max-w-sm"> 
+                    Trendoo
                     </p>
                 </div>
 
@@ -24,7 +24,7 @@ const Footer = () => {
                     <li className="mb-3"><a href="">Home</a></li>
                     <li className="mb-3"><a href="">About Us</a></li>
                     <li className="mb-3"><a href="">Reviews</a></li>
-                    <li className="mb-3"><a href="">Subscription</a></li>
+                    <li className="mb-3"><a href="">Subscribe Now!</a></li>
                     <li className="mb-3"><a href="">Favourites</a></li>
                 </ul>
 
@@ -34,7 +34,7 @@ const Footer = () => {
 {/* Producs Gallery */}
 
                 <div> 
-                <h4 className="font-bold mb-8">Producs Gallery</h4>
+                <h4 className="font-bold mb-8">Products Gallery</h4>
                 <ul className="flex flex-wrap gap-4">
                     <li><a href="">Women Shop</a></li>
                     <li><a href="">Men Shop</a></li>
@@ -52,7 +52,7 @@ const Footer = () => {
                     <ul className="flex flex-col gap-6">
                     <li><span className="text-red-500 pr-2">Tel.</span>+440123 456 789</li>
                     <li><span className="text-red-500 pr-2">E.</span> info@trendoo.com</li>
-                    <li><span className="text-red-500 pr-2">A.</span> London, UK </li>
+                    <li><span className="text-red-500 pr-2">A.</span> Unit 7, 109, Charing Cross Rd, London, UK </li>
 
                     </ul>
 
