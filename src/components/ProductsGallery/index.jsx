@@ -45,7 +45,7 @@ const ProjectGallery = () => {
     <>
       <div className="container">
         <div className="section">
-          <h2 className="productTitle flex flex-wrap justify-center">Popular Products</h2>
+          <h2 className="titleProducts flex flex-wrap justify-center">Popular Products</h2>
           <div className="flex flex-wrap justify-center">
             {popularProducts.map((product) => (
               <ProductCard key={product.id} product={product} />
@@ -53,7 +53,7 @@ const ProjectGallery = () => {
           </div>
         </div>
         <div className="section">
-          <h2 className="productTitle flex flex-wrap justify-center">Women's Products</h2>
+          <h2 className="titleProducts flex flex-wrap justify-center">Women's Products</h2>
           <div className="flex flex-wrap justify-center">
             {womenProducts.slice(0, displayedWomenProducts).map((product) => (
               <ProductCard key={product.id} product={product} />
@@ -61,14 +61,14 @@ const ProjectGallery = () => {
           </div>
           {displayedWomenProducts < womenProducts.length && (
             <div className="text-center">
-              <button onClick={loadMoreWomenProducts} className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+              <button onClick={loadMoreWomenProducts} className="buttonProducts mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
                 Explore more
               </button>
             </div>
           )}
         </div>
         <div className="section">
-          <h2 className="productTitle flex flex-wrap justify-center">Men's Products</h2>
+          <h2 className="titleProducts flex flex-wrap justify-center">Men's Products</h2>
           <div className="flex flex-wrap justify-center">
             {menProducts.slice(0, displayedMenProducts).map((product) => (
               <ProductCard key={product.id} product={product} />
@@ -76,7 +76,7 @@ const ProjectGallery = () => {
           </div>
           {displayedMenProducts < menProducts.length && (
             <div className="text-center">
-              <button onClick={loadMoreMenProducts} className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+              <button onClick={loadMoreMenProducts} className="buttonProducts mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
                 Explore more
               </button>
             </div>
