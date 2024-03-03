@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ProductModal from '../components/CardProductModal';
 
 
 function ProductCard({ product }) {
@@ -7,12 +8,22 @@ function ProductCard({ product }) {
 
     const [isFavorite, setIsFavorite] = useState(false);
 
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
     const toggleDescription = () => {
         setDescriptionVisible(!isDescriptionVisible);
     };
 
     const toggleFavorite = () => {
         setIsFavorite(!isFavorite);
+    };
+
+    const openModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
     };
 
     return (
@@ -23,7 +34,9 @@ function ProductCard({ product }) {
                 <img
                     className="imageCard rounded-t-lg"
                     src={product.image}
-                    alt="" />
+                    alt={product.item}
+                    onClick={openModal}
+                    />
 
                 {/* Code for let the description appearing when the show more info button is pressed */}
                 {isDescriptionVisible && (
@@ -64,7 +77,7 @@ function ProductCard({ product }) {
             {/* Product name div */}
             <div className="p-6">
                 <h5
-                    className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                    className="textCard mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
                     {product.item}
                 </h5>
 
@@ -75,12 +88,8 @@ function ProductCard({ product }) {
                     onClick={toggleDescription}>
                     {isDescriptionVisible ? 'Less Info' : 'More Info'}
                 </button>
-
-                {/* <p className="mt-1 text-lg font-medium text-gray-900">£{product.price}</p> */}
-                {/* <p className="text-base text-neutral-600 dark:text-neutral-200">
-                    {product.description}
-                </p> */}
             </div>
+            {isModalOpen && <ProductModal product={product} onClose={closeModal}/>}
         </div>
 
     );
