@@ -45,7 +45,7 @@ const ProjectGallery = () => {
     <>
       <div className="container">
         <div className="section">
-          <h2 className="titleProducts flex flex-wrap justify-center">Popular Products</h2>
+          <h2 className="titleProducts flex flex-wrap justify-center">Most Popular</h2>
           <div className="flex flex-wrap justify-center">
             {popularProducts.map((product) => (
               <ProductCard key={product.id} product={product} />
