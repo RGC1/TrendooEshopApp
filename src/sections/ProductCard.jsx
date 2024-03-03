@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ProductModal from '../components/CardProductModal';
 
 
 function ProductCard({ product }) {
@@ -7,12 +8,22 @@ function ProductCard({ product }) {
 
     const [isFavorite, setIsFavorite] = useState(false);
 
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
     const toggleDescription = () => {
         setDescriptionVisible(!isDescriptionVisible);
     };
 
     const toggleFavorite = () => {
         setIsFavorite(!isFavorite);
+    };
+
+    const openModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
     };
 
     return (
@@ -23,7 +34,9 @@ function ProductCard({ product }) {
                 <img
                     className="imageCard rounded-t-lg"
                     src={product.image}
-                    alt="" />
+                    alt={product.item}
+                    onClick={openModal}
+                    />
 
                 {/* Code for let the description appearing when the show more info button is pressed */}
                 {isDescriptionVisible && (
@@ -76,6 +89,7 @@ function ProductCard({ product }) {
                     {isDescriptionVisible ? 'Less Info' : 'More Info'}
                 </button>
             </div>
+            {isModalOpen && <ProductModal product={product} onClose={closeModal}/>}
         </div>
 
     );
