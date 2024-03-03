@@ -5,28 +5,72 @@ import ProductCard from '../../sections/ProductCard';
 import './style.css'
 
 const ProjectGallery = () => {
-  const [displayedProducts, setDisplayedProducts] = useState([]);
+  const [popularProducts, setPopularProducts] = useState([]);
+  const [womenProducts, setWomenProducts] = useState([]);
+  const [displayedWomenProducts, setDisplayedWomenProducts] = useState(4)
+  const [menProducts, setMenProducts] = useState([]);
+  const [displayedMenProducts, setDisplayedMenProducts] = useState(4)
+
 
   useEffect(() => {
-    const shuffledProducts = products.sort(() => Math.random() - 0.5);
-    const firstEightProducts = shuffledProducts.slice(0, 8);
-    setDisplayedProducts(firstEightProducts);
+    filterPopularProducts();
+    filterWomenProducts();
+    filterMenProducts();
   }, []);
 
-  const loadMore = () => {
-    const nextProducts = products.slice(displayedProducts.length, displayedProducts.length + 8);
-    setDisplayedProducts([...displayedProducts, ...nextProducts]);
+  const filterPopularProducts = () => {
+    const popularProductsData = products.filter(product => product.popularity === "bestseller");
+    setPopularProducts(popularProductsData);
+  };
+
+  const filterWomenProducts = () => {
+    const womenProductsData = products.filter(product => product.category === "women");
+    setWomenProducts(womenProductsData);
+  };
+
+  const filterMenProducts = () => {
+    const menProductsData = products.filter(product => product.category === "men");
+    setMenProducts(menProductsData);
+  };
+
+  const loadMoreWomenProducts = () => {
+    setDisplayedWomenProducts(womenProducts.length);
+  };
+
+  const loadMoreMenProducts = () => {
+    setDisplayedMenProducts(menProducts.length);
   };
 
   return (
     <>
-    <h1 className="flex flex-wrap justify-center">Our Products</h1>
-      <div className="flex flex-wrap justify-center">
-      {displayedProducts.map((product) => (
-          <ProductCard key={product.id} product={product} />
-        ))}
+      <div className="container">
+        <div className="section">
+          <h2 className="flex flex-wrap justify-center">Popular Products</h2>
+          <div className="flex flex-wrap justify-center">
+            {popularProducts.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+        </div>
+        <div className="section">
+          <h2 className="flex flex-wrap justify-center">Women's Products</h2>
+          <div className="flex flex-wrap justify-center">
+            {womenProducts.slice(0, displayedWomenProducts).map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+          {displayedWomenProducts < womenProducts.length && (
+            <div className="text-center">
+              <button onClick={loadMoreWomenProducts} className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+                Load More
+              </button>
+            </div>
+          )}
+        </div>
       </div>
-      {displayedProducts.length < products.length && (
+
+
+      {/* {displayedProducts.length < products.length && (
         <div className="flex justify-center mt-4">
           <button
             className="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600"
@@ -35,7 +79,11 @@ const ProjectGallery = () => {
             Load More
           </button>
         </div>
-      )}
+      )} */}
+
+
+
+
     </>
   );
 }
