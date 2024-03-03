@@ -89,24 +89,14 @@
   },
   {
     "id": 11,
-    "item": "Short Sleeve Shirt with abstract pattern",
-    "description": "Short Sleeve Shirt with abstract pattern, perfect for a casual, comfortable look.",
-    "image": "src/assets/images/Men/Shirts/shirtMen19.jpg",
-    "price": 20,
-    "category": "men"
-  },
-  {
-    "id": 12,
     "item": "Denim Shirt - Denim Blue",
     "description": "This chambray shirt offers a soft feel and year-round styling potential, perfect for casual weekends of social events.",
     "image": "src/assets/images/Men/Shirts/shirtMen5.jpg",
     "price": 27,
-    "category": "men",
-    "popularity": "bestseller"
-
+    "category": "men"
   },
   {
-    "id": 13,
+    "id": 12,
     "item": "Brushed Flannel Check Shirt - Red",
     "description": "This brushed 100% cotton shirt offers ultimate comfort with a timeless plaid pattern, perfect for versatile styling from casual days to layered outfits",
     "image": "src/assets/images/Men/Shirts/shirtMen7.jpg",
@@ -114,7 +104,7 @@
     "category": "men"
   },
   {
-    "id": 14,
+    "id": 13,
     "item": "Collarless Cotton Linen Shirt - Brown",
     "description": "A collarless poplin shirt, breathable and soft, offers laid-back style and a contemporary alternative to traditional button-downs.",
     "image": "src/assets/images/Men/Shirts/shirtMen16.jpg",
@@ -122,7 +112,7 @@
     "category": "men"
   },
   {
-    "id": 15,
+    "id": 14,
     "item": "Jeans Shirt Long Sleeve Denim - Blue",
     "description": "A versatile long-sleeved button shirt with plaid or solid colors, ideal for daily wear, easily paired with pants or jeans for a stylish look.",
     "image": "src/assets/images/Men/Shirts/shirtMen17.jpg",
@@ -130,7 +120,7 @@
     "category": "men"
   },
   {
-    "id": 16,
+    "id": 15,
     "item": "Button-Down Collar Dobby Flannel Shirt - Oatmeal",
     "description": "A shirt with exceptional handfeel and a heavier weight featuring a button-down collar, perfect for a casual, comfortable look.",
     "image": "src/assets/images/Men/Shirts/shirtMen10.jpg",
@@ -140,7 +130,7 @@
 
   },
   {
-    "id": 17,
+    "id": 16,
     "item": "Navy blue shirt with printed pattern - Blue",
     "description": "Cotton navy blue shirt with printed pattern.",
     "image": "src/assets/images/Men/Shirts/shirtMen2.jpg",
@@ -148,7 +138,7 @@
     "category": "men"
   },
   {
-    "id": 18,
+    "id": 17,
     "item": "Twill Shirt - White",
     "description": "Crafted from soft, pure cotton with a robust yet supple weave, this shirt embodies tradition and innovation.",
     "image": "src/assets/images/Men/Shirts/shirtMen18.jpg",
@@ -156,7 +146,32 @@
     "category": "men"
   },
   {
+    "id": 18,
+    "item": "Short Sleeve Shirt with abstract pattern",
+    "description": "Short Sleeve Shirt with abstract pattern, perfect for a casual, comfortable look.",
+    "image": "src/assets/images/Men/Shirts/shirtMen19.jpg",
+    "price": 25,
+    "category": "men",
+    "popularity": "bestseller"
+  },
+  {
     "id": 19,
+    "item": "Short Sleeve Shirt with blue leaves pattern - Blue",
+    "description": "Short Sleeve Shirt with blue leaves pattern, perfect for a casual, comfortable look.",
+    "image": "src/assets/images/Men/Shirts/shirtMen20.jpg",
+    "price": 21,
+    "category": "men"
+  },
+  {
+    "id": 20,
+    "item": "Short Sleeve Shirt with colorful marble print",
+    "description": "Short Sleeve Shirt with colourful marble print, perfect for a casual, comfortable look.",
+    "image": "src/assets/images/Men/Shirts/shirtMen21.jpg",
+    "price": 23,
+    "category": "men"
+  },
+  {
+    "id": 21,
     "item": "Organic Cotton Essential T-Shirt - Black",
     "description": "Wearable and breathable, our combed cotton tees are a favourite year after year.",
     "image": "src/assets/images/Men/Tshirts/t-shirtMen2.jpg",
@@ -164,34 +179,42 @@
     "category": "men"
   },
   {
-    "id": 20,
-    "item": "Mens Floral Print T Shirt - White",
-    "description": "Elevate your style with the breathable and effortlessly wearable floral print cotton tees for men.",
+    "id": 22,
+    "item": "Organic Cotton Essential T-Shirt - Green",
+    "description": "Wearable and breathable, our combed cotton tees are a favourite year after year.",
     "image": "src/assets/images/Men/Tshirts/t-shirtMen3.jpg",
     "price": 19,
     "category": "men"
   },
   {
-    "id": 21,
-    "item": "Money Heist T shirt - Blue",
-    "description": "Discover trendy Money Heist-themed shirts, crafted from high-quality 100% cotton with lasting prints.",
+    "id": 23,
+    "item": "Pocket Short Sleeve T-Shirt - White",
+    "description": "Elevate your casual look with our classic cotton t-shirt featuring a small, functional pocket for added convenience.",
     "image": "src/assets/images/Men/Tshirts/t-shirtMen4.jpg",
     "price": 21,
     "category": "men"
   },
   {
-    "id": 22,
-    "item": "Son Goku shirt, Dragon Ball Z T shirt - Black",
-    "description": "Discover trendy Dragon Ball Z themed shirts, crafted from high-quality 100% cotton with lasting prints.",
+    "id": 24,
+    "item": "Camouflage Printed T-Shirt",
+    "description": "Stand out in style with our Camouflage Printed T-Shirt, blending urban flair with rugged sophistication.",
     "image": "src/assets/images/Men/Tshirts/t-shirtMen5.jpg",
     "price": 23,
     "category": "men"
   },
   {
-    "id": 23,
-    "item": "Fragun T shirt - Green",
-    "description": "Green cotton T shirt.",
-    "image": "src/assets/images/Men/Tshirts/t-shirtMen8.jpg",
+    "id": 25,
+    "item": "Organic Cotton Essential T-Shirt - Burgundy",
+    "description": "Wearable and breathable, our combed cotton tees are a favourite year after year.",
+    "image": "src/assets/images/Men/Tshirts/t-shirtMen1.jpg",
+    "price": 20,
+    "category": "men"
+  },
+  {
+    "id": 26,
+    "item": "Splash Art T-shirt",
+    "description": "Make a statement with our Splash Art T-shirt, showcasing vibrant hues and dynamic designs for an eye-catching look.",
+    "image": "src/assets/images/Men/Tshirts/t-shirtMen6.jpg",
     "price": 20,
     "category": "men"
   }
