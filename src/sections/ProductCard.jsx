@@ -64,7 +64,7 @@ function ProductCard({ product }) {
             {/* Product name div */}
             <div className="p-6">
                 <h5
-                    className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                    className="textCard mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
                     {product.item}
                 </h5>
 
@@ -75,11 +75,6 @@ function ProductCard({ product }) {
                     onClick={toggleDescription}>
                     {isDescriptionVisible ? 'Less Info' : 'More Info'}
                 </button>
-
-                {/* <p className="mt-1 text-lg font-medium text-gray-900">£{product.price}</p> */}
-                {/* <p className="text-base text-neutral-600 dark:text-neutral-200">
-                    {product.description}
-                </p> */}
             </div>
         </div>
 
