@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import ImageInspo from './ImageInspo';
 
-
-const ImageContainer = () => {
+const ImageInspiration = () => {
     const [imageUrl, setImageUrl] = useState('');
 
     useEffect(() => {
@@ -29,4 +27,4 @@ const ImageContainer = () => {
 })
 };
 
-export default ImageContainer
+export default ImageInspiration
