@@ -1,3 +1,19 @@
 .cardContainer {
   margin: 20px;
 }
+
+
+.titleProducts {
+  font-size: 30px;
+  margin: 20px;
+  margin-top: 40px;
+}
+
+.buttonProducts {
+  margin-bottom: 30px;
+  background-color: #53bee1;
+}
+
+.buttonProducts:hover {
+  background-color: #0baee4;
+}
