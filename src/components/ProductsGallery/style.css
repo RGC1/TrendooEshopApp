@@ -1,3 +1,10 @@
 .cardContainer {
   margin: 20px;
 }
+
+
+.productTitle {
+  font-size: 30px;
+  margin: 20px;
+  margin-top: 40px;
+}
