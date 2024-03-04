@@ -31,53 +31,55 @@ const ProjectGallery = () => {
   };
 
   const filterWomenProducts = () => {
-  let filteredWomenProducts = products.filter((product) => product.category === 'women');
-  
-  // Check how many checkboxes are checked
-  const numCheckboxesChecked = [filterByShirtsWomen, filterByTShirtsWomen, filterByBlouserWomen].filter(Boolean).length;
-  
-  // If all checkboxes are checked, load all products
-  if (numCheckboxesChecked === 3) {
-    filteredWomenProducts = filteredWomenProducts.filter(
-      (product) => product.subcategory === 'shirt' || product.subcategory === 'tshirt' || product.subcategory === 'blouser'
-    );
-  } else {
-    // If exactly two checkboxes are checked, load products based on those checkboxes
-    if (numCheckboxesChecked === 2) {
-      if (filterByShirtsWomen && filterByTShirtsWomen) {
-        filteredWomenProducts = filteredWomenProducts.filter((product) => product.subcategory === 'shirt' || product.subcategory === 'tshirt');
-      }
-      if (filterByShirtsWomen && filterByBlouserWomen) {
-        filteredWomenProducts = filteredWomenProducts.filter((product) => product.subcategory === 'shirt' || product.subcategory === 'blouser');
-      }
-      if (filterByTShirtsWomen && filterByBlouserWomen) {
-        filteredWomenProducts = filteredWomenProducts.filter((product) => product.subcategory === 'tshirt' || product.subcategory === 'blouser');
-      }
+    let filteredWomenProducts = products.filter((product) => product.category === 'women');
+
+    // Check how many checkboxes are checked
+    const numCheckboxesChecked = [filterByShirtsWomen, filterByTShirtsWomen, filterByBlouserWomen].filter(Boolean).length;
+
+    // If all checkboxes are checked, load all products
+    if (numCheckboxesChecked === 3) {
+      filteredWomenProducts = filteredWomenProducts.filter(
+        (product) => product.subcategory === 'shirt' || product.subcategory === 'tshirt' || product.subcategory === 'blouser'
+      );
+      setDisplayedWomenProducts(filteredWomenProducts.length); // Update displayed women products count
     } else {
-      // If only one checkbox is checked, load products based on that checkbox
-      if (filterByShirtsWomen) {
-        filteredWomenProducts = filteredWomenProducts.filter((product) => product.subcategory === 'shirt');
-      }
-      if (filterByTShirtsWomen) {
-        filteredWomenProducts = filteredWomenProducts.filter((product) => product.subcategory === 'tshirt');
-      }
-      if (filterByBlouserWomen) {
-        filteredWomenProducts = filteredWomenProducts.filter((product) => product.subcategory === 'blouser');
+      // If exactly two checkboxes are checked, load products based on those checkboxes
+      if (numCheckboxesChecked === 2) {
+        if (filterByShirtsWomen && filterByTShirtsWomen) {
+          filteredWomenProducts = filteredWomenProducts.filter((product) => product.subcategory === 'shirt' || product.subcategory === 'tshirt');
+          setDisplayedWomenProducts(filteredWomenProducts.length);
+        }
+        if (filterByShirtsWomen && filterByBlouserWomen) {
+          filteredWomenProducts = filteredWomenProducts.filter((product) => product.subcategory === 'shirt' || product.subcategory === 'blouser');
+          setDisplayedWomenProducts(filteredWomenProducts.length);
+        }
+        if (filterByTShirtsWomen && filterByBlouserWomen) {
+          filteredWomenProducts = filteredWomenProducts.filter((product) => product.subcategory === 'tshirt' || product.subcategory === 'blouser');
+          setDisplayedWomenProducts(filteredWomenProducts.length);
+        }
+      } else {
+        // If only one checkbox is checked, load products based on that checkbox
+        if (filterByShirtsWomen) {
+          filteredWomenProducts = filteredWomenProducts.filter((product) => product.subcategory === 'shirt');
+          setDisplayedWomenProducts(filteredWomenProducts.length);
+        }
+        if (filterByTShirtsWomen) {
+          filteredWomenProducts = filteredWomenProducts.filter((product) => product.subcategory === 'tshirt');
+          setDisplayedWomenProducts(filteredWomenProducts.length);
+        }
+        if (filterByBlouserWomen) {
+          filteredWomenProducts = filteredWomenProducts.filter((product) => product.subcategory === 'blouser');
+          setDisplayedWomenProducts(filteredWomenProducts.length);
+        }
       }
     }
-  }
-  
-  setDisplayedWomenProducts(filteredWomenProducts.length); // Update displayed women products count
-  setWomenProducts(filteredWomenProducts);
-};
-
-  
-
+    setWomenProducts(filteredWomenProducts);
+  };
 
 
   const filterMenProducts = () => {
     let filteredMenProducts = products.filter((product) => product.category === 'men');
-  
+
     // If both filters are checked, load all men products
     if (filterByShirts && filterByTShirts) {
       filteredMenProducts = filteredMenProducts.filter(
@@ -97,7 +99,7 @@ const ProjectGallery = () => {
     }
     setMenProducts(filteredMenProducts);
   };
-  
+
 
   const loadMoreWomenProducts = () => {
     setDisplayedWomenProducts(womenProducts.length);
@@ -124,45 +126,45 @@ const ProjectGallery = () => {
 
 
           {/* Filter By Dropdown */}
-      <div className="flex justify-center mt-4">
-        <button
-          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
-          onClick={() => setShowFilters(!showFilters)}
-        >
-          Filter By
-        </button>
-        {showFilters && (
-          <div className="dropdown ml-2">
-            <label className="block">
-              <input
-                type="checkbox"
-                className="mr-2"
-                checked={filterByShirtsWomen}
-                onChange={() => setFilterByShirtsWomen(!filterByShirtsWomen)}
-              />
-              Shirts
-            </label>
-            <label className="block">
-              <input
-                type="checkbox"
-                className="mr-2"
-                checked={filterByTShirtsWomen}
-                onChange={() => setFilterByTShirtsWomen(!filterByTShirtsWomen)}
-              />
-              T-Shirts
-            </label>
-            <label className="block">
-              <input
-                type="checkbox"
-                className="mr-2"
-                checked={filterByBlouserWomen}
-                onChange={() => setFilterByBlouserWomen(!filterByBlouserWomen)}
-              />
-              Blouser
-            </label>
+          <div className="flex justify-center mt-4">
+            <button
+              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+              onClick={() => setShowFilters(!showFilters)}
+            >
+              Filter By
+            </button>
+            {showFilters && (
+              <div className="dropdown ml-2">
+                <label className="block">
+                  <input
+                    type="checkbox"
+                    className="mr-2"
+                    checked={filterByShirtsWomen}
+                    onChange={() => setFilterByShirtsWomen(!filterByShirtsWomen)}
+                  />
+                  Shirts
+                </label>
+                <label className="block">
+                  <input
+                    type="checkbox"
+                    className="mr-2"
+                    checked={filterByTShirtsWomen}
+                    onChange={() => setFilterByTShirtsWomen(!filterByTShirtsWomen)}
+                  />
+                  T-Shirts
+                </label>
+                <label className="block">
+                  <input
+                    type="checkbox"
+                    className="mr-2"
+                    checked={filterByBlouserWomen}
+                    onChange={() => setFilterByBlouserWomen(!filterByBlouserWomen)}
+                  />
+                  Blouser
+                </label>
+              </div>
+            )}
           </div>
-        )}
-      </div>
 
 
 
@@ -190,36 +192,36 @@ const ProjectGallery = () => {
 
 
           {/* Filter By Dropdown */}
-      <div className="flex justify-center mt-4">
-        <button
-          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
-          onClick={() => setShowFilters(!showFilters)}
-        >
-          Filter By
-        </button>
-        {showFilters && (
-          <div className="dropdown ml-2">
-            <label className="block">
-              <input
-                type="checkbox"
-                className="mr-2"
-                checked={filterByShirts}
-                onChange={() => setFilterByShirts(!filterByShirts)}
-              />
-              Shirts
-            </label>
-            <label className="block">
-              <input
-                type="checkbox"
-                className="mr-2"
-                checked={filterByTShirts}
-                onChange={() => setFilterByTShirts(!filterByTShirts)}
-              />
-              T-Shirts
-            </label>
+          <div className="flex justify-center mt-4">
+            <button
+              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+              onClick={() => setShowFilters(!showFilters)}
+            >
+              Filter By
+            </button>
+            {showFilters && (
+              <div className="dropdown ml-2">
+                <label className="block">
+                  <input
+                    type="checkbox"
+                    className="mr-2"
+                    checked={filterByShirts}
+                    onChange={() => setFilterByShirts(!filterByShirts)}
+                  />
+                  Shirts
+                </label>
+                <label className="block">
+                  <input
+                    type="checkbox"
+                    className="mr-2"
+                    checked={filterByTShirts}
+                    onChange={() => setFilterByTShirts(!filterByTShirts)}
+                  />
+                  T-Shirts
+                </label>
+              </div>
+            )}
           </div>
-        )}
-      </div>
 
 
 
