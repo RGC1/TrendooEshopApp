@@ -16,8 +16,8 @@ const ProductModal = ({ product, onClose }) => {
           <img src={product.image} alt={product.item} className="w-full h-auto" />
 
           <div className="p-8">
-            <h2 className="text-2xl font-bold text-gray-900">{product.item}</h2>
-            <p className="text-lg text-gray-900">£{product.price}</p>
+            <h2 className="text-2xl text-gray-900">{product.item}</h2>
+            <p className="text-lg text-gray-900 mt-3">£{product.price}</p>
             <p className="text-base text-gray-700 mt-4">{product.description}</p>
             <div className="flex justify-center mt-6">
               <button type="submit" className="buttonProducts flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Add to favourite</button>

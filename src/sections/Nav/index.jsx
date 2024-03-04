@@ -17,9 +17,12 @@ const MyNav = () => {
     setDropdownOpen(false);
   };
 
-  // Function to toggle the mobile menu
+  // Function to toggle the mobile menu and close dropdown
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+    if (!menuOpen) {
+      setDropdownOpen(false); // Close the dropdown when toggling mobile menu
+    }
   };
 
   return (
@@ -58,18 +61,21 @@ const MyNav = () => {
                     className="absolute mt-6 w-48 rounded-lg shadow-lg"
                     onMouseEnter={openDropdown}
                     onMouseLeave={closeDropdown}
+                    style={{
+                      left: "48%",
+                    }}
                   >
                     <ul
                       className="py-2 text-sm"
                       aria-labelledby="dropdownLargeButton"
                     >
                       <li>
-                        <a href="#category" className="block px-16 py-4">
+                        <a href="#sectionWomen" className="block px-16 py-4">
                           WOMEN
                         </a>
                       </li>
                       <li>
-                        <a href="#productCard" className="block px-16">
+                        <a href="#sectionMen" className="block px-16">
                           MEN
                         </a>
                       </li>
@@ -114,10 +120,9 @@ const MyNav = () => {
       </nav>
 
       {/* Mobile Menu */}
-      <div id = 'drop'
-        className={`${
-          menuOpen ? "block" : "hidden"
-        } sm:hidden`}
+      <div id='drop'
+        className={`${menuOpen ? "block mobileMenu" : "hidden"
+          } sm:hidden`}
       >
         <div className="px-2 pt-2 pb-3 space-y-1">
           <a
@@ -128,16 +133,47 @@ const MyNav = () => {
           </a>
           <a
             href="#about"
-            className="block px-3 py-2 text-base font-medium "
+            className="block px-3 py-2 text-base font-medium"
           >
             ABOUT US
           </a>
-          <a
-            href="#products"
-            className="block px-3 py-2 text-base font-medium"
-          >
-            PRODUCTS
-          </a>
+
+          {menuOpen && (
+            <div id="mobileDropdown" className="block sm:hidden">
+              <button
+                className="block px-3 py-2 text-base font-medium"
+                onClick={openDropdown}
+              >
+                PRODUCTS
+              </button>
+              {dropdownOpen && (
+                <div
+                  id="dropdownNavbar"
+                  className="absolute mt-6 w-48 rounded-lg shadow-lg"
+                  onMouseEnter={openDropdown}
+                  onMouseLeave={closeDropdown}
+                  style={{
+                    left: "35%",
+                    top: "1.6%"
+                  }}
+                >
+                  <ul className="py-2 text-sm" aria-labelledby="dropdownLargeButton">
+                    <li>
+                      <a href="#sectionWomen" className="block px-4 py-2">
+                        WOMEN
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#sectionMen" className="block px-4 py-2">
+                        MEN
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              )}
+            </div>
+          )}
+
           <a
             href="#footer"
             className="block px-3 py-2 text-base font-medium"

@@ -4,15 +4,15 @@ import ProductModal from '../components/CardProductModal';
 
 function ProductCard({ product }) {
 
-    const [isDescriptionVisible, setDescriptionVisible] = useState(false);
+    // const [isDescriptionVisible, setDescriptionVisible] = useState(false);
 
     const [isFavorite, setIsFavorite] = useState(false);
 
     const [isModalOpen, setIsModalOpen] = useState(false);
 
-    const toggleDescription = () => {
-        setDescriptionVisible(!isDescriptionVisible);
-    };
+    // const toggleDescription = () => {
+    //     setDescriptionVisible(!isDescriptionVisible);
+    // };
 
     const toggleFavorite = () => {
         setIsFavorite(!isFavorite);
@@ -29,21 +29,28 @@ function ProductCard({ product }) {
     return (
         <div
             className="cardContainer block max-w-[18rem] rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-            <div className="relative overflow-hidden bg-cover bg-no-repeat">
+            <div className="relative overflow-hidden bg-cover bg-no-repeat cursor-pointer">
 
-                <img
-                    className="imageCard rounded-t-lg"
-                    src={product.image}
-                    alt={product.item}
-                    onClick={openModal}
+                {/* Onclick Modal opens when image is clicked */}
+                <div onClick={openModal}>
+                    <img
+                        className="imageCard rounded-t-lg"
+                        src={product.image}
+                        alt={product.item}
                     />
 
-                {/* Code for let the description appearing when the show more info button is pressed */}
+                    {/* When user hover on image quickview appears */}
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-80 transition-opacity duration-300 bg-black bg-opacity-50 text-white">
+                        <p className="text-lg font-bold">Quick View</p>
+                    </div>
+                </div>
+
+                {/* Code for let the description appearing when the show more info button is pressed
                 {isDescriptionVisible && (
                     <div className="absolute bottom-0 left-0 right-0 p-4 bg-white bg-opacity-70 text-base text-gray-900 text-justify">
                         {product.description}
                     </div>
-                )}
+                )} */}
 
                 {/* Product Price div */}
                 <div className="absolute bottom-0 right-0 p-2 bg-white bg-opacity-55 rounded-tl-lg text-lg font-medium text-gray-900">
@@ -81,15 +88,17 @@ function ProductCard({ product }) {
                     {product.item}
                 </h5>
 
-                {/* Code to toggle description on button click and change button text when description is visible*/}
+                {/* Code to toggle description on button click and change button text when description is visible
                 <button
                     type="button"
                     className="hover:text-gray-700 focus:outline-none"
                     onClick={toggleDescription}>
                     {isDescriptionVisible ? 'Less Info' : 'More Info'}
-                </button>
+                </button> */}
             </div>
-            {isModalOpen && <ProductModal product={product} onClose={closeModal}/>}
+            
+            {/* Code for opening and closing modal */}
+            {isModalOpen && <ProductModal product={product} onClose={closeModal} />}
         </div>
 
     );

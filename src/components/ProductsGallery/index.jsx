@@ -43,7 +43,7 @@ const ProjectGallery = () => {
 
   return (
     <>
-      <div className="container">
+      <div className="container" id="sectionMostPopular">
         <div className="section">
           <h2 className="titleProducts flex flex-wrap justify-center">Most Popular</h2>
           <div className="flex flex-wrap justify-center">
@@ -52,7 +52,7 @@ const ProjectGallery = () => {
             ))}
           </div>
         </div>
-        <div className="section">
+        <div className="section" id="sectionWomen">
           <h2 className="titleProducts flex flex-wrap justify-center">Women's Products</h2>
           <div className="flex flex-wrap justify-center">
             {womenProducts.slice(0, displayedWomenProducts).map((product) => (
@@ -67,7 +67,7 @@ const ProjectGallery = () => {
             </div>
           )}
         </div>
-        <div className="section">
+        <div className="section" id="sectionMen">
           <h2 className="titleProducts flex flex-wrap justify-center">Men's Products</h2>
           <div className="flex flex-wrap justify-center">
             {menProducts.slice(0, displayedMenProducts).map((product) => (
