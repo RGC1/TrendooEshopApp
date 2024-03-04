@@ -36,9 +36,9 @@ const Footer = () => {
                 <div> 
                 <h4 className="font-bold mb-8">Products Gallery</h4>
                 <ul className="flex flex-wrap gap-4">
-                    <li><a href="">Women Shop</a></li>
-                    <li><a href="">Men Shop</a></li>
-                    <li><a href="">New Arrivals</a></li>                   
+                    <li><a href="#sectionWomen">Women Shop</a></li>
+                    <li><a href="#sectionMen">Men Shop</a></li>
+                    <li><a href="#sectionMostPopular">Most Popular</a></li>                   
                 </ul>
                     
                 </div>

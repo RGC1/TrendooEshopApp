@@ -43,7 +43,7 @@ const ProjectGallery = () => {
 
   return (
     <>
-      <div className="container">
+      <div className="container" id="sectionMostPopular">
         <div className="section">
           <h2 className="titleProducts flex flex-wrap justify-center">Most Popular</h2>
           <div className="flex flex-wrap justify-center">
