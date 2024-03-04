@@ -1,32 +1,63 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Carousel } from 'react-bootstrap';
+import { Carousel } from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ImageInspiration = () => {
-    const [imageUrl, setImageUrl] = useState('');
+    const [imageUrls, setImageUrls] = useState([]);
+    const apiKey = '6FeaPh0XHiaVxX60hJoMiqxISkh0KrYDF7SQb5svK3UyNWNj4Bwiq6ZC'
 
     useEffect(() => {
         const fetchData = async () => {
             try {
                 const response = await axios.get('https://api.pexels.com/v1/search', {
                     headers: {
-                        Authorization: '6FeaPh0XHiaVxX60hJoMiqxISkh0KrYDF7SQb5svK3UyNWNj4Bwiq6ZC'
+                        Authorization: apiKey,
                     },
                     params: {
                         query: 'fashion',
-                        per_page: 7,
+                        per_page: 5,
                     },
                 });
                 //Extracts random image URL
-                const randomFashionImage = response.data.photos[Math.floor(Math.random() * response.data.photos.length)].src.original;
+                const randomFashionImage = response.data.photos.map(photo => photo.src.original);
                 //Sets the random image to the state
-                setImageUrl(randomFashionImage);
+                setImageUrls(randomFashionImage);
             } catch (error) {
                 console.error('Error fetching Pexels API:', error);
             }
         };
-})
+
+        fetchData();
+    }, [apiKey]);
+
+    function ImageCarousel() {
+        return (
+            {imageUrls.map((url, index) => (
+            <Carousel>
+                <Carousel.Item key={index}>
+                <img className='d-block w-100' src={url} alt={`Fashion Image ${index}`} />
+                </Carousel.Item>
+                <Carousel.Item key={index}>
+                <img className='d-block w-100' src={url} alt={`Fashion Image ${index}`} />
+                </Carousel.Item>
+                <Carousel.Item key={index}>
+                <img className='d-block w-100' src={url} alt={`Fashion Image ${index}`} />
+                </Carousel.Item>
+                <Carousel.Item key={index}>
+                <img className='d-block w-100' src={url} alt={`Fashion Image ${index}`} />
+                </Carousel.Item>
+                <Carousel.Item key={index}>
+                <img className='d-block w-100' src={url} alt={`Fashion Image ${index}`} />
+                </Carousel.Item>
+            </Carousel>
+                    
+                ))}
+                
+            );
+        }
+        export default UncontrolledExample;
+    );
 };
 
 export default ImageInspiration
