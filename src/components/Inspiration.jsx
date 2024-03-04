@@ -29,10 +29,10 @@ const ImageInspiration = () => {
     };
 
     useEffect(() => {
-        fetchData();
+        fetchData(); // Initial fetch
 
         const intervalId = setInterval(() => {
-            fetchData();
+            fetchData(); // Will fetch new images every 5 seconds
         }, 5000);
 
         return () => {
@@ -41,13 +41,16 @@ const ImageInspiration = () => {
     }, [apiKey]);
 
     return (
-        <Carousel>
-            {imageUrls.map((url, index) => (
-                <Carousel.Item key={index} style={{ height: '400px', width: '100%'}}>
-                    <img className='d-block w-100 h-100 object-fit-cover' src={url} alt={`Fashion Image ${index}`} />
-                </Carousel.Item>
+        <div>
+            <h2 style={{ padding: '30px', marginTop: '40px', textAlign: 'center'}}>Need some inspiration? Here are some recommendations:</h2>
+            <Carousel>
+                {imageUrls.map((url, index) => (
+                    <Carousel.Item key={index} style={{ height: '400px', width: '100%'}}>
+                        <img className='d-block w-100 h-100 object-fit-cover' src={url} alt={`Fashion Image ${index}`} />
+                    </Carousel.Item>
             ))}
-        </Carousel>    
+            </Carousel>   
+            </div>
     );
 };
 
