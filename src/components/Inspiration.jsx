@@ -41,15 +41,15 @@ const ImageInspiration = () => {
     }, [apiKey]);
 
     return (
-        <div>
-            <h2 style={{ padding: '30px', marginTop: '40px', textAlign: 'center'}}>Need some inspiration? Here are some recommendations:</h2>
+        <div className='text-center'>
+            <h2 className='text-3x1 font-bold p-8 mt-8'>Need some inspiration? Here are some recommendations:</h2>
             <Carousel>
                 {imageUrls.map((url, index) => (
-                    <Carousel.Item key={index} style={{ height: '400px', width: '100%'}}>
-                        <img className='d-block w-100 h-100 object-fit-cover' src={url} alt={`Fashion Image ${index}`} />
+                    <Carousel.Item key={index} className='h-96'>
+                        <img className='object-cover w-full h-full' src={url} alt={`Fashion Image ${index}`} />
                     </Carousel.Item>
             ))}
-            </Carousel>   
+            </Carousel>  
             </div>
     );
 };
