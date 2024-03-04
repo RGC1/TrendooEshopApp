@@ -50,8 +50,8 @@ const Footer = () => {
                 <h4 className="font-bold mb-8">Contact us</h4>
 
                     <ul className="flex flex-col gap-6">
-                    <li><span className="text-red-500 pr-2">Tel.</span>+440123 456 789</li>
-                    <li><span className="text-red-500 pr-2">E.</span> info@trendoo.com</li>
+                    <li><a href="tel:+440123 456 789"><span className="text-red-500 pr-2">Tel.</span>+440123 456 789</a></li>
+                    <li><a href="mailto:info@trendoo.com"><span className="text-red-500 pr-2">E.</span> info@trendoo.com</a></li>
                     <li><span className="text-red-500 pr-2">A.</span> Unit 7, 109, Charing Cross Rd, London, UK </li>
 
                     </ul>
