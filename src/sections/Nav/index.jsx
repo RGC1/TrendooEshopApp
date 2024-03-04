@@ -1,89 +1,189 @@
-
 import React, { useState } from "react";
+import logo from "../../assets/images/Logo.png";
 import "./style.css";
 
-import logo from "../../assets/images/Logo.jpg";
 
 const MyNav = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  // Function to toggle the dropdown menu
-  const toggleDropdown = () => {
-    setDropdownOpen(!dropdownOpen);
+  // Function to open the dropdown menu
+  const openDropdown = () => {
+    setDropdownOpen(true);
+  };
+
+  // Function to close the dropdown menu
+  const closeDropdown = () => {
+    setDropdownOpen(false);
+  };
+
+  // Function to toggle the mobile menu and close dropdown
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+    if (!menuOpen) {
+      setDropdownOpen(false); // Close the dropdown when toggling mobile menu
+    }
   };
 
   return (
     <>
       <nav>
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-          <div className="relative flex h-16 items-center justify-between">
-            <div className="flex-shrink-0 items-center">
-              <a href="" className="my-2 flex items-end gap-3">
-                <img src={logo} alt="logo" height={71} width={71} />
+          <div className="relative flex items-center justify-between h-16">
+            <div >
+              <a href="/" className="flex items-end">
+                <img src={logo} alt="logo" height={121} width={121} />
               </a>
             </div>
             <div className="hidden sm:block sm:ml-6">
-              <div className="flex space-x-4"></div>
-              <a
-                href="#home"
-                className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium mr-6 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              >
-                Home
-              </a>
-              <a
-                href="#about"
-                className="bg-gray-900 text-white rounded-md px-3 py-2 mr-6 text-sm font-medium hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              >
-                About us
-              </a>
-              <button
-                onClick={toggleDropdown} // Add onClick handler to toggle dropdown
-                className="bg-gray-900 text-white rounded-md px-3 py-2 mr-6 text-sm font-medium hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              >
-                Products{" "} 
-              </button>
-              {/* Conditionally render the dropdown menu based on dropdownOpen state */}
-              {dropdownOpen && (
-                <div
-                  id="dropdownNavbar"
-                  className="z-10 absolute mt-2 w-48 bg-white divide-y divide-gray-100 rounded-lg shadow-lg dark:bg-gray-700 dark:divide-gray-600"
+              <div className="flex space-x-4">
+                <a
+                  href="#home"
+                  className="rounded-md px-3 py-2 text-sm font-medium"
                 >
-                  <ul
-                    className="py-2 text-sm text-gray-700 dark:text-gray-400"
-                    aria-labelledby="dropdownLargeButton"
+                  HOME
+                </a>
+                <a
+                  href="#about"
+                  className="rounded-md px-3 py-2 text-sm font-medium"
+                >
+                  ABOUT US
+                </a>
+                <button
+                  onMouseEnter={openDropdown}
+                  className="rounded-md px-3 py-2 text-sm font-medium"
+                >
+                  PRODUCTS
+                </button>
+                {dropdownOpen && (
+                  <div
+                    id="dropdownNavbar"
+                    className="absolute mt-6 w-48 rounded-lg shadow-lg"
+                    onMouseEnter={openDropdown}
+                    onMouseLeave={closeDropdown}
+                    style={{
+                      left: "48%",
+                    }}
                   >
-                    <li>
-                      <a
-                        href="#"
-                        className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                      >
-                        Woman
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                      >
-                        Men
-                      </a>
+                    <ul
+                      className="py-2 text-sm"
+                      aria-labelledby="dropdownLargeButton"
+                    >
+                      <li>
+                        <a href="#sectionWomen" className="block px-16 py-4">
+                          WOMEN
+                        </a>
                       </li>
-                  </ul>
-                </div>
-              )}
-              <a
-                href="#contact"
-                className="bg-gray-900 text-white rounded-md px-3 py-2 mr-6 text-sm font-medium hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                      <li>
+                        <a href="#sectionMen" className="block px-16">
+                          MEN
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+                <a
+                  href="#footer"
+                  className="rounded-md px-3 py-2 text-sm font-medium"
+                >
+                  CONTACT US
+                </a>
+              </div>
+            </div>
+            <a href="#" className="text-lg">
+              <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.72 2 12.32 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.82-3.4 7.22-8.55 11.53L12 21.35z" />
+              </svg>
+            </a>
+            <div className="flex items-center sm:hidden">
+              <button
+                onClick={toggleMenu}
+                className="focus:outline-none"
               >
-                Contact Us
-              </a>
+                <svg
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
             </div>
           </div>
         </div>
       </nav>
+
+      {/* Mobile Menu */}
+      <div id='drop'
+        className={`${menuOpen ? "block mobileMenu" : "hidden"
+          } sm:hidden`}
+      >
+        <div className="px-2 pt-2 pb-3 space-y-1">
+          <a
+            href="#home"
+            className="block px-3 py-2 text-base font-medium "
+          >
+            HOME
+          </a>
+          <a
+            href="#about"
+            className="block px-3 py-2 text-base font-medium"
+          >
+            ABOUT US
+          </a>
+
+          {menuOpen && (
+            <div id="mobileDropdown" className="block sm:hidden">
+              <button
+                className="block px-3 py-2 text-base font-medium"
+                onClick={openDropdown}
+              >
+                PRODUCTS
+              </button>
+              {dropdownOpen && (
+                <div
+                  id="dropdownNavbar"
+                  className="absolute mt-6 w-48 rounded-lg shadow-lg"
+                  onMouseEnter={openDropdown}
+                  onMouseLeave={closeDropdown}
+                  style={{
+                    left: "35%",
+                    top: "1.6%"
+                  }}
+                >
+                  <ul className="py-2 text-sm" aria-labelledby="dropdownLargeButton">
+                    <li>
+                      <a href="#sectionWomen" className="block px-4 py-2">
+                        WOMEN
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#sectionMen" className="block px-4 py-2">
+                        MEN
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              )}
+            </div>
+          )}
+
+          <a
+            href="#footer"
+            className="block px-3 py-2 text-base font-medium"
+          >
+            CONTACT US
+          </a>
+        </div>
+      </div>
     </>
   );
 };
 
 export default MyNav;
-

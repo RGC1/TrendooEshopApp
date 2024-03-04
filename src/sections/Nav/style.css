@@ -1,4 +1,25 @@
+.mobileMenu,
 nav {
-  background-color: lightblue;
-  height: 100px;
+  height: 20mm;
+  background-color: #f8f6f2;
+  font-family:'Times New Roman', Times, serif;
+  color: #69595e;
+  size: 40px;
+}
+
+#drop {
+  height: 50mm;
+}
+
+#dropdownNavbar{
+  background-color: rgba(248, 246, 242, 0.85);
+}
+
+a:hover{
+  display: inline-block;
+  transition: transform 0.3s ease; /* Adding transition for smooth movement */
+}
+
+a:hover {
+  transform: translateY(-3px); /* Move the text up by 3 pixels on hover */
 }

@@ -3,189 +3,219 @@
     "id": 1,
     "item": "Chenille T-shirt",
     "description": "A boxy tee made from super soft chenille - 100% Polyester",
-    "image": "",
+    "image": "../src/assets/images/Women/Tshirts/t-shirtWomen1.jpg",
     "price": 10.00,
-    "category": "Tops & T-Shirts"
+    "category": "women"
   },
 
   {
     "id": 2,
     "item": "Co-Ord Acid Wash T-shirt",
     "description": "When it comes to style and versatility, this tee can do it all! - 95% Cotton, 5% Elastane.",
-    "image": "",
+    "image": "../src/assets/images/Women/Tshirts/t-shirtWomen2.jpg",
     "price": 12.00,
-    "category": "Tops & T-Shirts"
+    "category": "women"
   },
 
   {
     "id": 3,
     "item": "Paula Echevarría Coordinates T-Shirt",
     "description": "We think you can coordinate an outfit with this tee - 50% Cotton, 50%  Polyester",
-    "image": "",
+    "image": "../src/assets/images/Women/Tshirts/t-shirtWomen3.jpg",
     "price": 14.00,
-    "category": "Tops & T-Shirts"
+    "category": "women"
+
   },
 
   {
     "id": 4,
     "item": "Oversized Short Sleeve T-Shirt",
     "description": "The trendy tee you can rely on time and time again! - 100% Cotton",
-    "image": "",
+    "image": "../src/assets/images/Women/Tshirts/t-shirtWomen4.jpg",
     "price": 24.00,
-    "category": "Tops & T-Shirts"
+    "category": "women",
+    "popularity": "bestseller"
   },
 
   {
     "id": 5,
     "item": "Ribbed Scoop Neck Cropped T-Shirt",
     "description": "This baby tee is one piece you'll want to scoop into your basket! - 63% Polyester, 33% Viscose,  4% Elastane",
-    "image": "",
+    "image": "../src/assets/images/Women/Tshirts/t-shirtWomen5.jpg",
     "price": 22.00,
-    "category": "Tops & T-Shirts"
+    "category": "women"
   },
 
   {
     "id": 6,
-    "item": "Crewneck Boxy T-Shirt",
+    "item": "Crewneck Boxy",
     "description": "Take your everyday essentials to a new level with this stretch T-shirt - 100% Cotton ",
-    "image": "",
+    "image": "../src/assets/images/Women/Blouser/blouserWomen1.jpg",
     "price": 14.00,
-    "category": "Tops & T-Shirts"
+    "category": "women"
   },
   {
     "id": 7,
     "item": "Paula Echevarría Padded Racer Vest",
     "description": "Add a supportive touch to your casual wardrobe with our padded vest! - 96% Cotton, 4% Elastane",
-    "image": "",
+    "image": "../src/assets/images/Women/Blouser/blouserWomen2.jpg",
     "price": 13.00,
-    "category": "Tops & T-Shirts"
+    "category": "women",
+    "popularity": "bestseller"
   },
   {
     "id": 8,
-    "item": "Oversized Graphic T-Shirt",
+    "item": "Oversized Graphic",
     "description": "This tee smells like a style statement to us! - 100% Cotton",
-    "image": "",
+    "image": "../src/assets/images/Women/Blouser/blouserWomen3.jpg",
     "price": 17.00,
-    "category": "Tops & T-Shirts"
+    "category": "women"
   },
   {
     "id": 9,
     "item": "2pk Stretch Vests",
     "description": "Time to refresh your vests! - 95% Cotton, 5% Elastane",
-    "image": "",
+    "image": "../src/assets/images/Women/Blouser/blouserWomen4.jpg",
     "price": 20.00,
-    "category": "Tops & T-Shirts"
+    "category": "women"
   },
   {
     "id": 10,
-    "item": "Performance Crop Top",
+    "item": "Performance Blouser Chic",
     "description": "Slay your next workout class with this sleek sports bra! - Polyester 87% Elastane 13%",
-    "image": "",
+    "image": "../src/assets/images/Women/Blouser/blouserWomen5.jpg",
     "price": 22.00,
-    "category": "Tops & T-Shirts"
+    "category": "women"
   },
   {
     "id": 11,
-    "item": "Short Sleeve Shirt with abstract pattern",
-    "description": "Short Sleeve Shirt with abstract pattern, perfect for a casual, comfortable look.",
-    "image": "src/assets/images/Men/Shirts/shirtMen19.jpg",
-    "price": 20,
-    "category": "shirts"
+    "item": "Denim Shirt - Denim Blue",
+    "description": "This chambray shirt offers a soft feel and year-round styling potential, perfect for casual weekends of social events.",
+    "image": "./images/Men/Shirts/shirtMen5.jpg",
+    "price": 27,
+    "category": "men"
   },
   {
     "id": 12,
-    "item": "Denim Shirt - Denim Blue",
-    "description": "This chambray shirt offers a soft feel and year-round styling potential, perfect for casual weekends of social events.",
-    "image": "src/assets/images/Men/Shirts/shirtMen5.jpg",
-    "price": 27,
-    "category": "shirts"
+    "item": "Brushed Flannel Check Shirt - Red",
+    "description": "This brushed 100% cotton shirt offers ultimate comfort with a timeless plaid pattern, perfect for versatile styling from casual days to layered outfits",
+    "image": "./images/Men/Shirts/shirtMen7.jpg",
+    "price": 29,
+    "category": "men"
   },
   {
     "id": 13,
-    "item": "Brushed Flannel Check Shirt - Red",
-    "description": "This brushed 100% cotton shirt offers ultimate comfort with a timeless plaid pattern, perfect for versatile styling from casual days to layered outfits",
-    "image": "src/assets/images/Men/Shirts/shirtMen7.jpg",
-    "price": 29,
-    "category": "shirts"
+    "item": "Collarless Cotton Linen Shirt - Brown",
+    "description": "A collarless poplin shirt, breathable and soft, offers laid-back style and a contemporary alternative to traditional button-downs.",
+    "image": "./images/Men/Shirts/shirtMen16.jpg",
+    "price": 32,
+    "category": "men"
   },
   {
     "id": 14,
-    "item": "Collarless Cotton Linen Shirt - Brown",
-    "description": "A collarless poplin shirt, breathable and soft, offers laid-back style and a contemporary alternative to traditional button-downs.",
-    "image": "src/assets/images/Men/Shirts/shirtMen16.jpg",
-    "price": 32,
-    "category": "shirts"
+    "item": "Jeans Shirt Long Sleeve Denim - Blue",
+    "description": "A versatile long-sleeved button shirt with plaid or solid colors, ideal for daily wear, easily paired with pants or jeans for a stylish look.",
+    "image": "./images/Men/Shirts/shirtMen17.jpg",
+    "price": 26,
+    "category": "men"
   },
   {
     "id": 15,
-    "item": "Jeans Shirt Long Sleeve Denim - Blue",
-    "description": "A versatile long-sleeved button shirt with plaid or solid colors, ideal for daily wear, easily paired with pants or jeans for a stylish look.",
-    "image": "src/assets/images/Men/Shirts/shirtMen17.jpg",
-    "price": 26,
-    "category": "shirts"
+    "item": "Button-Down Collar Dobby Flannel Shirt - Oatmeal",
+    "description": "A shirt with exceptional handfeel and a heavier weight featuring a button-down collar, perfect for a casual, comfortable look.",
+    "image": "./images/Men/Shirts/shirtMen10.jpg",
+    "price": 34,
+    "category": "men",
+    "popularity": "bestseller"
+
   },
   {
     "id": 16,
-    "item": "Button-Down Collar Dobby Flannel Shirt - Oatmeal",
-    "description": "A shirt with exceptional handfeel and a heavier weight featuring a button-down collar, perfect for a casual, comfortable look.",
-    "image": "src/assets/images/Men/Shirts/shirtMen10.jpg",
-    "price": 34,
-    "category": "shirts"
+    "item": "Navy blue shirt with printed pattern - Blue",
+    "description": "Cotton navy blue shirt with printed pattern.",
+    "image": "./images/Men/Shirts/shirtMen2.jpg",
+    "price": 32,
+    "category": "men"
   },
   {
     "id": 17,
-    "item": "Navy blue shirt with printed pattern - Blue",
-    "description": "Cotton navy blue shirt with printed pattern.",
-    "image": "src/assets/images/Men/Shirts/shirtMen2.jpg",
-    "price": 32,
-    "category": "shirts"
+    "item": "Twill Shirt - White",
+    "description": "Crafted from soft, pure cotton with a robust yet supple weave, this shirt embodies tradition and innovation.",
+    "image": "./images/Men/Shirts/shirtMen18.jpg",
+    "price": 27,
+    "category": "men"
   },
   {
     "id": 18,
-    "item": "Twill Shirt - White",
-    "description": "Crafted from soft, pure cotton with a robust yet supple weave, this shirt embodies tradition and innovation.",
-    "image": "src/assets/images/Men/Shirts/shirtMen18.jpg",
-    "price": 27,
-    "category": "shirts"
+    "item": "Short Sleeve Shirt with abstract pattern",
+    "description": "Short Sleeve Shirt with abstract pattern, perfect for a casual, comfortable look.",
+    "image": "./images/Men/Shirts/shirtMen19.jpg",
+    "price": 25,
+    "category": "men",
+    "popularity": "bestseller"
   },
   {
     "id": 19,
-    "item": "Organic Cotton Essential T-Shirt - Black",
-    "description": "Wearable and breathable, our combed cotton tees are a favourite year after year.",
-    "image": "src/assets/images/Men/Tshirts/t-shirtMen2.jpg",
-    "price": 22,
-    "category": "tshirts"
+    "item": "Short Sleeve Shirt with blue leaves pattern - Blue",
+    "description": "Short Sleeve Shirt with blue leaves pattern, perfect for a casual, comfortable look.",
+    "image": "./images/Men/Shirts/shirtMen20.jpg",
+    "price": 21,
+    "category": "men"
   },
   {
     "id": 20,
-    "item": "Mens Floral Print T Shirt - White",
-    "description": "Elevate your style with the breathable and effortlessly wearable floral print cotton tees for men.",
-    "image": "src/assets/images/Men/Tshirts/t-shirtMen3.jpg",
-    "price": 19,
-    "category": "tshirts"
+    "item": "Short Sleeve Shirt with colorful marble print",
+    "description": "Short Sleeve Shirt with colourful marble print, perfect for a casual, comfortable look.",
+    "image": "./images/Men/Shirts/shirtMen21.jpg",
+    "price": 23,
+    "category": "men"
   },
   {
     "id": 21,
-    "item": "Money Heist T shirt - Blue",
-    "description": "Discover trendy Money Heist-themed shirts, crafted from high-quality 100% cotton with lasting prints.",
-    "image": "src/assets/images/Men/Tshirts/t-shirtMen4.jpg",
-    "price": 21,
-    "category": "tshirts"
+    "item": "Organic Cotton Essential T-Shirt - Black",
+    "description": "Wearable and breathable, our combed cotton tees are a favourite year after year.",
+    "image": "./images/Men/Tshirts/t-shirtMen2.jpg",
+    "price": 22,
+    "category": "men"
   },
   {
     "id": 22,
-    "item": "Son Goku shirt, Dragon Ball Z T shirt - Black",
-    "description": "Discover trendy Dragon Ball Z themed shirts, crafted from high-quality 100% cotton with lasting prints.",
-    "image": "src/assets/images/Men/Tshirts/t-shirtMen5.jpg",
-    "price": 23,
-    "category": "tshirts"
+    "item": "Organic Cotton Essential T-Shirt - Green",
+    "description": "Wearable and breathable, our combed cotton tees are a favourite year after year.",
+    "image": "./images/Men/Tshirts/t-shirtMen3.jpg",
+    "price": 19,
+    "category": "men"
   },
   {
     "id": 23,
-    "item": "Fragun T shirt - Green",
-    "description": "Green cotton T shirt.",
-    "image": "src/assets/images/Men/Tshirts/t-shirtMen8.jpg",
+    "item": "Pocket Short Sleeve T-Shirt - White",
+    "description": "Elevate your casual look with our classic cotton t-shirt featuring a small, functional pocket for added convenience.",
+    "image": "./images/Men/Tshirts/t-shirtMen4.jpg",
+    "price": 21,
+    "category": "men"
+  },
+  {
+    "id": 24,
+    "item": "Camouflage Printed T-Shirt",
+    "description": "Stand out in style with our Camouflage Printed T-Shirt, blending urban flair with rugged sophistication.",
+    "image": "./images/Men/Tshirts/t-shirtMen5.jpg",
+    "price": 23,
+    "category": "men"
+  },
+  {
+    "id": 25,
+    "item": "Organic Cotton Essential T-Shirt - Burgundy",
+    "description": "Wearable and breathable, our combed cotton tees are a favourite year after year.",
+    "image": "./images/Men/Tshirts/t-shirtMen1.jpg",
     "price": 20,
-    "category": "tshirts"
+    "category": "men"
+  },
+  {
+    "id": 26,
+    "item": "Splash Art T-shirt",
+    "description": "Make a statement with our Splash Art T-shirt, showcasing vibrant hues and dynamic designs for an eye-catching look.",
+    "image": "./images/Men/Tshirts/t-shirtMen6.jpg",
+    "price": 20,
+    "category": "men"
   }
 ]
