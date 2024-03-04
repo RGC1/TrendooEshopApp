@@ -23,8 +23,7 @@
     "description": "We think you can coordinate an outfit with this tee - 50% Cotton, 50%  Polyester",
     "image": "../src/assets/images/Women/Tshirts/t-shirtWomen3.jpg",
     "price": 14.00,
-    "category": "women",
-    "popularity": "bestseller"
+    "category": "women"
 
   },
 
@@ -34,7 +33,8 @@
     "description": "The trendy tee you can rely on time and time again! - 100% Cotton",
     "image": "../src/assets/images/Women/Tshirts/t-shirtWomen4.jpg",
     "price": 24.00,
-    "category": "women"
+    "category": "women",
+    "popularity": "bestseller"
   },
 
   {
@@ -43,8 +43,7 @@
     "description": "This baby tee is one piece you'll want to scoop into your basket! - 63% Polyester, 33% Viscose,  4% Elastane",
     "image": "../src/assets/images/Women/Tshirts/t-shirtWomen5.jpg",
     "price": 22.00,
-    "category": "women",
-    "popularity": "bestseller"
+    "category": "women"
   },
 
   {
@@ -61,7 +60,8 @@
     "description": "Add a supportive touch to your casual wardrobe with our padded vest! - 96% Cotton, 4% Elastane",
     "image": "../src/assets/images/Women/Blouser/blouserWomen2.jpg",
     "price": 13.00,
-    "category": "women"
+    "category": "women",
+    "popularity": "bestseller"
   },
   {
     "id": 8,
