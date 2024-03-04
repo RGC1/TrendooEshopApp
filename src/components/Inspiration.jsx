@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Carousel } from 'react-bootstrap/Carousel';
+import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ImageInspiration = () => {
@@ -31,32 +31,14 @@ const ImageInspiration = () => {
         fetchData();
     }, [apiKey]);
 
-    function ImageCarousel() {
-        return (
+    return (
+        <Carousel>
             {imageUrls.map((url, index) => (
-            <Carousel>
                 <Carousel.Item key={index}>
-                <img className='d-block w-100' src={url} alt={`Fashion Image ${index}`} />
+                    <img className='d-block w-100' src={url} alt={`Fashion Image ${index}`} />
                 </Carousel.Item>
-                <Carousel.Item key={index}>
-                <img className='d-block w-100' src={url} alt={`Fashion Image ${index}`} />
-                </Carousel.Item>
-                <Carousel.Item key={index}>
-                <img className='d-block w-100' src={url} alt={`Fashion Image ${index}`} />
-                </Carousel.Item>
-                <Carousel.Item key={index}>
-                <img className='d-block w-100' src={url} alt={`Fashion Image ${index}`} />
-                </Carousel.Item>
-                <Carousel.Item key={index}>
-                <img className='d-block w-100' src={url} alt={`Fashion Image ${index}`} />
-                </Carousel.Item>
-            </Carousel>
-                    
-                ))}
-                
-            );
-        }
-        export default UncontrolledExample;
+            ))}
+        </Carousel>    
     );
 };
 
