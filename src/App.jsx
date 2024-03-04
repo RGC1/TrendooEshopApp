@@ -2,7 +2,7 @@ import React from 'react'
 import './index.css'
 import CustomerReviews from './sections/CustomerReviews'
 import Hero from './sections/Hero'
-{/*import Inspiration from './sections/Favourites'*/}
+{/*import Inspiration from './sections/Inspiration'*/}
 import Footer from './sections/Footer'
 import ProductsGallery from './components/ProductsGallery'
 import Subscribe from './sections/Subscribe'
