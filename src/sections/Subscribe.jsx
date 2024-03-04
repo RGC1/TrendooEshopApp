@@ -40,7 +40,7 @@ const Subscribe = () => {
 
   return (
     
-    <section id="contact-us" className="max-container flex flex-col items-center gap-10">
+    <section id="contact-us" className="bg-[#f8f6f2] max-container flex flex-col items-center gap-10">
       <h3 className="text-4xl leading-[68px] text-center font-bold">
         CONNECT WITH US ON
         <span className="text-purple-400 text-4xl leading-[68px] text-center font-bold"> SOCIAL MEDIA</span>
