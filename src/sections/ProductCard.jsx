@@ -30,12 +30,20 @@ function ProductCard({ product }) {
         <div
             className="cardContainer block max-w-[18rem] rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
             <div className="relative overflow-hidden bg-cover bg-no-repeat cursor-pointer">
-                <img
-                    className="imageCard rounded-t-lg"
-                    src={product.image}
-                    alt={product.item}
-                    onClick={openModal}
-                />
+
+                {/* Onclick Modal opens when image is clicked */}
+                <div onClick={openModal}>
+                    <img
+                        className="imageCard rounded-t-lg"
+                        src={product.image}
+                        alt={product.item}
+                    />
+
+                    {/* When user hover on image quickview appears */}
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-80 transition-opacity duration-300 bg-black bg-opacity-50 text-white">
+                        <p className="text-lg font-bold">Quick View</p>
+                    </div>
+                </div>
 
                 {/* Code for let the description appearing when the show more info button is pressed
                 {isDescriptionVisible && (
@@ -88,6 +96,8 @@ function ProductCard({ product }) {
                     {isDescriptionVisible ? 'Less Info' : 'More Info'}
                 </button> */}
             </div>
+            
+            {/* Code for opening and closing modal */}
             {isModalOpen && <ProductModal product={product} onClose={closeModal} />}
         </div>
 
