@@ -1,12 +1,17 @@
-.mobileMenu,
+#drop,
 nav {
   height: 20mm;
   background-color: #f8f6f2;
   font-family:'Times New Roman', Times, serif;
-  color: #69595e;
   size: 40px;
 }
-
+#drop a,
+#drop button,
+nav button,
+nav a{
+  color: #69595e;
+  text-decoration: none;
+}
 #drop {
   height: 50mm;
 }

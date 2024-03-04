@@ -58,7 +58,7 @@ const MyNav = () => {
                 {dropdownOpen && (
                   <div
                     id="dropdownNavbar"
-                    className="absolute mt-6 w-48 rounded-lg shadow-lg"
+                    className="absolute mt-8 w-48 rounded-lg shadow-lg"
                     onMouseEnter={openDropdown}
                     onMouseLeave={closeDropdown}
                     style={{
@@ -66,16 +66,16 @@ const MyNav = () => {
                     }}
                   >
                     <ul
-                      className="py-2 text-sm"
+                      className="mt-4 py-2 text-sm"
                       aria-labelledby="dropdownLargeButton"
                     >
                       <li>
-                        <a href="#sectionWomen" className="block px-16 py-4">
+                        <a href="#sectionWomen" className="block px-8 py-2">
                           WOMEN
                         </a>
                       </li>
                       <li>
-                        <a href="#sectionMen" className="block px-16">
+                        <a href="#sectionMen" className="block  px-8 py-2">
                           MEN
                         </a>
                       </li>
@@ -124,7 +124,7 @@ const MyNav = () => {
         className={`${menuOpen ? "block mobileMenu" : "hidden"
           } sm:hidden`}
       >
-        <div className="px-2 pt-2 pb-3 space-y-1">
+        <div className=" pt-2 pb-3 space-y-1">
           <a
             href="#home"
             className="block px-3 py-2 text-base font-medium "
@@ -153,8 +153,8 @@ const MyNav = () => {
                   onMouseEnter={openDropdown}
                   onMouseLeave={closeDropdown}
                   style={{
-                    left: "35%",
-                    top: "1.6%"
+                    left: "25%",
+                    top: "1.4%"
                   }}
                 >
                   <ul className="py-2 text-sm" aria-labelledby="dropdownLargeButton">
