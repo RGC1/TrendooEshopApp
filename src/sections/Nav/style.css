@@ -1,4 +1,4 @@
-#drop,
+.mobileMenu,
 nav {
   height: 20mm;
   background-color: #f8f6f2;
@@ -7,8 +7,12 @@ nav {
   size: 40px;
 }
 
+#drop {
+  height: 50mm;
+}
+
 #dropdownNavbar{
-  background-color: #f8f6f2;
+  background-color: rgba(248, 246, 242, 0.85);
 }
 
 a:hover{
