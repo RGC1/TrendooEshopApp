@@ -3,7 +3,7 @@
     "id": 1,
     "item": "Chenille T-shirt",
     "description": "A boxy tee made from super soft chenille - 100% Polyester",
-    "image": "../src/assets/images/Women/Tshirts/t-shirtWomen1.jpg",
+    "image": "./images/Women/Tshirts/t-shirtWomen1.jpg",
     "price": 10.00,
     "category": "women"
   },
@@ -12,7 +12,7 @@
     "id": 2,
     "item": "Co-Ord Acid Wash T-shirt",
     "description": "When it comes to style and versatility, this tee can do it all! - 95% Cotton, 5% Elastane.",
-    "image": "../src/assets/images/Women/Tshirts/t-shirtWomen2.jpg",
+    "image": "./images/Women/Tshirts/t-shirtWomen2.jpg",
     "price": 12.00,
     "category": "women"
   },
@@ -21,7 +21,7 @@
     "id": 3,
     "item": "Paula Echevarría Coordinates T-Shirt",
     "description": "We think you can coordinate an outfit with this tee - 50% Cotton, 50%  Polyester",
-    "image": "../src/assets/images/Women/Tshirts/t-shirtWomen3.jpg",
+    "image": "./images/Women/Tshirts/t-shirtWomen3.jpg",
     "price": 14.00,
     "category": "women"
 
@@ -31,7 +31,7 @@
     "id": 4,
     "item": "Oversized Short Sleeve T-Shirt",
     "description": "The trendy tee you can rely on time and time again! - 100% Cotton",
-    "image": "../src/assets/images/Women/Tshirts/t-shirtWomen4.jpg",
+    "image": "./images/Women/Tshirts/t-shirtWomen4.jpg",
     "price": 24.00,
     "category": "women",
     "popularity": "bestseller"
@@ -41,7 +41,7 @@
     "id": 5,
     "item": "Ribbed Scoop Neck Cropped T-Shirt",
     "description": "This baby tee is one piece you'll want to scoop into your basket! - 63% Polyester, 33% Viscose,  4% Elastane",
-    "image": "../src/assets/images/Women/Tshirts/t-shirtWomen5.jpg",
+    "image": "./images/Women/Tshirts/t-shirtWomen5.jpg",
     "price": 22.00,
     "category": "women"
   },
@@ -50,7 +50,7 @@
     "id": 6,
     "item": "Crewneck Boxy",
     "description": "Take your everyday essentials to a new level with this stretch T-shirt - 100% Cotton ",
-    "image": "../src/assets/images/Women/Blouser/blouserWomen1.jpg",
+    "image": "./images/Women/Blouser/blouserWomen1.jpg",
     "price": 14.00,
     "category": "women"
   },
@@ -58,7 +58,7 @@
     "id": 7,
     "item": "Paula Echevarría Padded Racer Vest",
     "description": "Add a supportive touch to your casual wardrobe with our padded vest! - 96% Cotton, 4% Elastane",
-    "image": "../src/assets/images/Women/Blouser/blouserWomen2.jpg",
+    "image": "./images/Women/Blouser/blouserWomen2.jpg",
     "price": 13.00,
     "category": "women",
     "popularity": "bestseller"
@@ -67,7 +67,7 @@
     "id": 8,
     "item": "Oversized Graphic",
     "description": "This tee smells like a style statement to us! - 100% Cotton",
-    "image": "../src/assets/images/Women/Blouser/blouserWomen3.jpg",
+    "image": "./images/Women/Blouser/blouserWomen3.jpg",
     "price": 17.00,
     "category": "women"
   },
@@ -75,7 +75,7 @@
     "id": 9,
     "item": "2pk Stretch Vests",
     "description": "Time to refresh your vests! - 95% Cotton, 5% Elastane",
-    "image": "../src/assets/images/Women/Blouser/blouserWomen4.jpg",
+    "image": "./images/Women/Blouser/blouserWomen4.jpg",
     "price": 20.00,
     "category": "women"
   },
@@ -83,7 +83,7 @@
     "id": 10,
     "item": "Performance Blouser Chic",
     "description": "Slay your next workout class with this sleek sports bra! - Polyester 87% Elastane 13%",
-    "image": "../src/assets/images/Women/Blouser/blouserWomen5.jpg",
+    "image": "./images/Women/Blouser/blouserWomen5.jpg",
     "price": 22.00,
     "category": "women"
   },
