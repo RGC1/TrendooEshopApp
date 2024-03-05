@@ -1,23 +1,23 @@
 #drop,
 nav {
-  height: 20mm;
-  background-color: #f8f6f2;
-
+  height: 25mm;
+  background-color:#545454;
   size: 40px;
 }
-#drop a,
+
 #drop button,
 nav button,
 nav a{
-  color: #69595e;
+  color: white;
   text-decoration: none;
 }
+
 #drop {
   height: 50mm;
 }
 
 #dropdownNavbar{
-  background-color: rgba(248, 246, 242, 0.85);
+  background-color: #545454;
 }
 
 a:hover{
