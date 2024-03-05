@@ -40,20 +40,20 @@ Install dependencies using:
 - You can connect with us through social media by picking which one you prefer and add your email.
 
 
-![short showcase of website](./src/assets/images/8e5fb081-2876-42bf-b499-496f0cc1d051-ezgif.com-optimize.gif)
+![short showcase of website](./src/assets/images/TrendooWebsite.gif)
 
 
 ## Credits
 
 <a href="https://github.com/beatak777">Bea Konya's GitHub</a>
 
-<a href="">Giada Sponzilli's GitHub</a>
+<a href="https://github.com/giadasponzilli">Giada Sponzilli's GitHub</a>
 
 <a href="https://github.com/idareis">Ida Reis's GitHub</a>
 
-<a href="">Ramona Cirlan's GitHub</a>
+<a href="https://github.com/RGC1">Ramona Cirlan's GitHub</a>
 
-<a href="">Raphaela Gil's GitHub</a>
+<a href="https://github.com/RaphaGil">Raphaela Gil's GitHub</a>
 
 
 ## License
