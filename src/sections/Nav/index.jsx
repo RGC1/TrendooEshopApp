@@ -27,7 +27,7 @@ const MyNav = () => {
 
   return (
     <>
-      <nav>
+      <nav id="nav">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex items-center justify-between h-16">
             <div >
@@ -44,7 +44,7 @@ const MyNav = () => {
                   HOME
                 </a>
                 <a
-                  href="#subscribe"
+                  href="#about"
                   className="rounded-md px-3 py-2 text-sm font-medium"
                 >
                   ABOUT US
@@ -62,7 +62,7 @@ const MyNav = () => {
                     onMouseEnter={openDropdown}
                     onMouseLeave={closeDropdown}
                     style={{
-                      left: "48%",
+                      left: "50%",
                     }}
                   >
                     <ul
@@ -70,12 +70,12 @@ const MyNav = () => {
                       aria-labelledby="dropdownLargeButton"
                     >
                       <li>
-                        <a href="#sectionWomen" className="block px-8 py-2">
+                        <a href="#sectionWomen" className="block px-8 py-2 flex justify-center">
                           WOMEN
                         </a>
                       </li>
                       <li>
-                        <a href="#sectionMen" className="block  px-8 py-2">
+                        <a href="#sectionMen" className="block  px-8 py-2 flex justify-center">
                           MEN
                         </a>
                       </li>
@@ -153,8 +153,8 @@ const MyNav = () => {
                   onMouseEnter={openDropdown}
                   onMouseLeave={closeDropdown}
                   style={{
-                    left: "25%",
-                    top: "1.4%"
+                    left: "32%",
+                    top: "1.3%"
                   }}
                 >
                   <ul className="py-2 text-sm" aria-labelledby="dropdownLargeButton">
