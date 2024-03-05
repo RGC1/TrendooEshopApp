@@ -48,7 +48,7 @@ const Subscribe = () => {
           About Us
         </h3>
         <p className='text-center p-2'>
-          Tredoo was invented as a trendy, avant-garde fashion label known for its innovative designs and cutting-edge styles. We are a group of five passionate students dedicated to honing our skills in Front End Web Development. Our mission is to provide a seamless online shopping experience for individuals who appreciate quality and unique clothing options. Explore our collection of comfortable attire tailored for both women and men. Select your favorite items and proceed to the store to make your purchase while they're still in stock.
+          Trendoo was invented as a trendy, avant-garde fashion label known for its innovative designs and cutting-edge styles. We are a group of five passionate students dedicated to honing our skills in Front End Web Development. Our mission is to provide a seamless online shopping experience for individuals who appreciate quality and unique clothing options. Explore our collection of comfortable attire tailored for both women and men. Select your favorite items and proceed to the store to make your purchase while they're still in stock.
         </p>
       </div>
       <div>
