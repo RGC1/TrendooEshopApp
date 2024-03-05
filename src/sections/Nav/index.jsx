@@ -32,7 +32,7 @@ const MyNav = () => {
           <div className="relative flex items-center justify-between h-16">
             <div >
               <a href="/" className="flex items-end">
-                <img src={logo} alt="logo" height={161} width={161} />
+                <img src={logo} alt="logo" height={250} width={250} />
               </a>
             </div>
             <div className="hidden sm:block sm:ml-6">
