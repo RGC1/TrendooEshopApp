@@ -23,6 +23,8 @@ const ProjectGallery = () => {
     filterMenProducts();
   }, [filterByShirts, filterByTShirts, filterByShirtsWomen, filterByTShirtsWomen, filterByBlouserWomen]);
 
+
+  // Function to filter the property "popularity" to show the popular products.
   const filterPopularProducts = () => {
     const popularProductsData = products.filter(
       (product) => product.popularity === 'bestseller'
@@ -30,6 +32,7 @@ const ProjectGallery = () => {
     setPopularProducts(popularProductsData);
   };
 
+  // Function to filter the property category for women products and to check if any additional filer has been applied by the user.
   const filterWomenProducts = () => {
     let filteredWomenProducts = products.filter((product) => product.category === 'women');
 
@@ -77,6 +80,7 @@ const ProjectGallery = () => {
   };
 
 
+  // Function to filter the property category for men products and to check if any additional filer has been applied by the user.
   const filterMenProducts = () => {
     let filteredMenProducts = products.filter((product) => product.category === 'men');
 
@@ -100,19 +104,22 @@ const ProjectGallery = () => {
     setMenProducts(filteredMenProducts);
   };
 
-
+  // Function to load more products if the women products are set to 4, otherwise set it back to 4.
   const loadMoreWomenProducts = () => {
-    setDisplayedWomenProducts(womenProducts.length);
+    setDisplayedWomenProducts(displayedWomenProducts === 4 ? womenProducts.length : 4);
   };
 
+  // Function to load more products if the men products are set to 4, otherwise set it back to 4.
   const loadMoreMenProducts = () => {
-    setDisplayedMenProducts(menProducts.length);
+    setDisplayedMenProducts(displayedMenProducts === 4 ? menProducts.length : 4);
   };
 
   return (
     <>
-      <div className="container" id="sectionMostPopular">
-        <div className="section">
+      <div className="container">
+
+        {/* Most Popular Section: map over the items with bestseller value to display them in this section*/}
+        <div className="section" id="sectionMostPopular">
           <h2 className="titleProducts flex flex-wrap justify-center">Most Popular</h2>
           <div className="flex flex-wrap justify-center">
             {popularProducts.map((product) => (
@@ -120,22 +127,22 @@ const ProjectGallery = () => {
             ))}
           </div>
         </div>
+
+        {/* Women's Section */}
         <div className="section" id="sectionWomen">
           <h2 className="titleProducts flex flex-wrap justify-center">Women's Products</h2>
 
-
-
-          {/* Filter By Dropdown */}
+          {/* Filters for women products */}
           <div className="flex justify-center mt-4">
             <button
-              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+              className="buttonProducts text-white py-1 px-3 rounded"
               onClick={() => setShowFilters(!showFilters)}
             >
-              Filter By
+              Filters
             </button>
             {showFilters && (
-              <div className="dropdown ml-2">
-                <label className="block">
+              <div className="flex items-center">
+                <label className="inline-block mr-4 ml-4 mb-6">
                   <input
                     type="checkbox"
                     className="mr-2"
@@ -144,7 +151,7 @@ const ProjectGallery = () => {
                   />
                   Shirts
                 </label>
-                <label className="block">
+                <label className="inline-block mr-4 mb-6">
                   <input
                     type="checkbox"
                     className="mr-2"
@@ -153,7 +160,7 @@ const ProjectGallery = () => {
                   />
                   T-Shirts
                 </label>
-                <label className="block">
+                <label className="inline-block mb-6">
                   <input
                     type="checkbox"
                     className="mr-2"
@@ -166,42 +173,40 @@ const ProjectGallery = () => {
             )}
           </div>
 
-
-
           <div className="flex flex-wrap justify-center">
             {womenProducts.slice(0, displayedWomenProducts).map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
           </div>
-          {displayedWomenProducts < womenProducts.length && (
+          {/* Coditional for showing women cards, if the products are more then 4 in total, the button will be render with the onClick event LoadMoreWomenProducts*/}
+          {womenProducts.length > 4 && (
             <div className="text-center">
               <button
                 onClick={loadMoreWomenProducts}
                 className="buttonProducts mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
               >
-                Explore more
+                {/* Ternary operator used inside the button's text. If displayedWomenProducts is equal to 4, it displays "Explore more"; otherwise, it displays "Explore less".*/}
+                {displayedWomenProducts === 4 ? 'Explore more' : 'Explore less'}
               </button>
             </div>
           )}
         </div>
+
+        {/* Men's Section */}
         <div className="section" id="sectionMen">
           <h2 className="titleProducts flex flex-wrap justify-center">Men's Products</h2>
 
-
-
-
-
-          {/* Filter By Dropdown */}
+          {/* Filters for men products */}
           <div className="flex justify-center mt-4">
             <button
-              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+              className="buttonProducts text-white py-1 px-3 rounded"
               onClick={() => setShowFilters(!showFilters)}
             >
-              Filter By
+              Filters
             </button>
             {showFilters && (
-              <div className="dropdown ml-2">
-                <label className="block">
+              <div className="flex items-center">
+                <label className="inline-block mr-4 ml-4 mb-6">
                   <input
                     type="checkbox"
                     className="mr-2"
@@ -210,7 +215,7 @@ const ProjectGallery = () => {
                   />
                   Shirts
                 </label>
-                <label className="block">
+                <label className="inline-block mb-6">
                   <input
                     type="checkbox"
                     className="mr-2"
@@ -223,21 +228,20 @@ const ProjectGallery = () => {
             )}
           </div>
 
-
-
-
           <div className="flex flex-wrap justify-center">
             {menProducts.slice(0, displayedMenProducts).map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
           </div>
-          {displayedMenProducts < menProducts.length && (
+          {/* Coditional for showing women cards, if the products are more then 4 in total, the button will be render with the onClick event LoadMoreWomenProducts*/}
+          {menProducts.length > 4 && (
             <div className="text-center">
               <button
                 onClick={loadMoreMenProducts}
                 className="buttonProducts mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
               >
-                Explore more
+                {/* Ternary operator used inside the button's text. If displayedWomenProducts is equal to 4, it displays "Explore more"; otherwise, it displays "Explore less".*/}
+                {displayedMenProducts === 4 ? 'Explore more' : 'Explore less'}
               </button>
             </div>
           )}
