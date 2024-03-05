@@ -2,7 +2,7 @@ import React from 'react';
 import ReviewCards from '../components/ReviewCard';
 const CustomerReviews = () => {
     return (
-        <section id="reviews" className="bg-slate-300">
+        <section id="reviews" className="bg-[#c1ff72]">
             <div className="title">
                 <h2 className='text-[1.7rem] md:[2.2rem] text-center'>See What Our Clients Say...</h2>
             </div>
