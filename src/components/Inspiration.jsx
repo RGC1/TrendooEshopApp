@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Carousel } from 'flowbite-react';
+
 
 const ImageInspiration = () => {
     const [imageUrls, setImageUrls] = useState([]);
@@ -18,7 +20,7 @@ const ImageInspiration = () => {
                 },
             });
 
-            {/*console.log('API Response:', response.data);*/}
+        {/*console.log('API Response:', response.data);*/}
             //Extracts random image URL
             const randomFashionImage = response.data.photos.map(photo => photo.src.original);
             //Sets the random image to the state
@@ -41,36 +43,12 @@ const ImageInspiration = () => {
     }, [apiKey]);
 
     return (
-        <div id="default-carousel" className="relative w-full" data-carousel="slide">
-      {/* Carousel wrapper */}
-        <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-            {/* Carousel items */}
-            {imageUrls.map((url, index) => (
-            <div key={index} className={`hidden duration-700 ease-in-out ${index === 0 ? 'opacity-100' : 'opacity-0'}`} data-carousel-item>
-                <img src={url} className="absolute block w-full h-full" alt={`Carousel Image ${index}`} />
-            </div>
-            ))}
-        </div>
-        {/* Slider indicators */}
-        <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-            {imageUrls.map((_, index) => (
-            <button
-                key={index}
-                type="button"
-                className={`w-3 h-3 rounded-full ${index === 0 ? 'bg-white' : 'bg-gray-300'}`}
-                aria-current={index === 0}
-                aria-label={`Slide ${index + 1}`}
-                data-carousel-slide-to={index}
-            />
-            ))}
-        </div>
-        {/* Slider controls */}
-        <button type="button" className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-            {/* Previous button content */}
-        </button>
-        <button type="button" className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-            {/* Next button content */}
-        </button>
+        <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
+            <Carousel>
+                {imageUrls.map((url, index) => (
+                    <img key={index} src={url} alt={`Fashion Image ${index}`} />
+                ))}
+            </Carousel>
     </div>
     );
 };
