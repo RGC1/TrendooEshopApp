@@ -13,9 +13,9 @@ const ProductModal = ({ product, onClose }) => {
             </svg>
           </button>
 
-          <img src={product.image} alt={product.item} className="w-full h-auto" />
+          <img src={product.image} alt={product.item} className="w-full h-50" />
 
-          <div className="p-8">
+          <div className="p-8 mt-6">
             <h2 className="text-2xl text-gray-900">{product.item}</h2>
             <p className="text-lg text-gray-900 mt-3">£{product.price}</p>
             <p className="text-base text-gray-700 mt-4">{product.description}</p>

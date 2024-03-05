@@ -31,13 +31,15 @@
 
 html{
     scroll-behavior: smooth;
+    background-color: #f8f6f2
 }
 
 body {
-    font-family: 'Alegreya', sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 1.5;
     height: 100vh;
     position: relative;
+    background-color: #f8f6f2
 }
 
 .container {

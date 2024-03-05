@@ -32,7 +32,7 @@ const MyNav = () => {
           <div className="relative flex items-center justify-between h-16">
             <div >
               <a href="/" className="flex items-end">
-                <img src={logo} alt="logo" height={121} width={121} />
+                <img src={logo} alt="logo" height={161} width={161} />
               </a>
             </div>
             <div className="hidden sm:block sm:ml-6">
@@ -44,7 +44,7 @@ const MyNav = () => {
                   HOME
                 </a>
                 <a
-                  href="#about"
+                  href="#subscribe"
                   className="rounded-md px-3 py-2 text-sm font-medium"
                 >
                   ABOUT US
@@ -127,13 +127,13 @@ const MyNav = () => {
         <div className=" pt-2 pb-3 space-y-1">
           <a
             href="#home"
-            className="block px-3 py-2 text-base font-medium "
+            className="block px-3 py-2 text-base font-small "
           >
             HOME
           </a>
           <a
             href="#about"
-            className="block px-3 py-2 text-base font-medium"
+            className="block px-3 py-2 text-base font-small"
           >
             ABOUT US
           </a>
@@ -141,7 +141,7 @@ const MyNav = () => {
           {menuOpen && (
             <div id="mobileDropdown" className="block sm:hidden">
               <button
-                className="block px-3 py-2 text-base font-medium"
+                className="block px-3 py-2 text-base font-small"
                 onClick={openDropdown}
               >
                 PRODUCTS
@@ -176,7 +176,7 @@ const MyNav = () => {
 
           <a
             href="#footer"
-            className="block px-3 py-2 text-base font-medium"
+            className="block px-3 py-2 text-base font-small"
           >
             CONTACT US
           </a>
