@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import './Subscribe.css'
+
 const Subscribe = () => {
   // State to manage subscription data
   const [subscriptionData, setSubscriptionData] = useState({
@@ -81,11 +83,11 @@ const Subscribe = () => {
               <span className="text-black hover:underline ml-2">Instagram</span>
             </label>
           </div>
-          <div>
+          <div className='inputSubscribe'>
             <input
               type="text"
               placeholder="subscribe@trendoo.com"
-              className="input p-2"
+              className="input p-2 rounded-xl"
               name="email"
               value={subscriptionData.email}
               onChange={handleInputChange}
