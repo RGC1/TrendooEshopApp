@@ -7,6 +7,7 @@ const ImageInspiration = () => {
     const [imageUrls, setImageUrls] = useState([]);
     const apiKey = '6FeaPh0XHiaVxX60hJoMiqxISkh0KrYDF7SQb5svK3UyNWNj4Bwiq6ZC'
 
+    useEffect(() => {
     const fetchData = async () => {
         try {
             const response = await axios.get('https://api.pexels.com/v1/search', {
@@ -30,26 +31,20 @@ const ImageInspiration = () => {
         }
     };
 
-    useEffect(() => {
         fetchData(); // Initial fetch
-
-        const intervalId = setInterval(() => {
-            fetchData(); // Will fetch new images every 5 seconds
-        }, 5000);
-
-        return () => {
-            clearInterval(intervalId);
-        };
     }, [apiKey]);
 
     return (
-        <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
-            <Carousel>
-                {imageUrls.map((url, index) => (
-                    <img key={index} src={url} alt={`Fashion Image ${index}`} />
-                ))}
-            </Carousel>
-    </div>
+        <div style={{ paddingTop: '50px', textAlign: 'center'}}>
+            <h2 style={{ fontSize: '27px', marginBottom: '20px'}}>Still undecided? Check these for some inspiration:</h2>
+                <div style={{ height: '500px'}}>
+                    <Carousel>
+                        {imageUrls.map((url, index) => (
+                            <img key={index} src={url} alt={`Fashion Image ${index}`} />
+                        ))}
+                    </Carousel>
+                </div>
+        </div>
     );
 };
 

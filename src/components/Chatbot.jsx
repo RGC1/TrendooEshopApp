@@ -1,4 +1,4 @@
-import React, { useState } from React;
+{/*import React, { useState } from React;
 
 const Chat = () => {
     const [messages, setMessages] = useState([]);
@@ -44,4 +44,4 @@ const Chat = () => {
     );
 };
 
-export default Chat
+export default Chat*/}
