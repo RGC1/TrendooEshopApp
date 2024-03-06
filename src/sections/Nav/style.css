@@ -1,7 +1,7 @@
 #drop,
 nav {
   height: 20mm;
-  background-color: #f8f6f2;
+  background-color: #545454;;
 
   size: 40px;
 }
@@ -9,7 +9,7 @@ nav {
 #drop button,
 nav button,
 nav a{
-  color: #69595e;
+  color: white;
   text-decoration: none;
 }
 #drop {
@@ -17,7 +17,7 @@ nav a{
 }
 
 #dropdownNavbar{
-  background-color: rgba(248, 246, 242, 0.85);
+  background-color: #545454;;
 }
 
 a:hover{
