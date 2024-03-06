@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import ProductModal from '../components/CardProductModal';
 
 
-function ProductCard({ product }) {
+function ProductCard({ product, onToggleFavorite, isfavorited }) {
 
     // const [isDescriptionVisible, setDescriptionVisible] = useState(false);
 
-    const [isFavorite, setIsFavorite] = useState(false);
+
 
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -14,9 +14,9 @@ function ProductCard({ product }) {
     //     setDescriptionVisible(!isDescriptionVisible);
     // };
 
-    const toggleFavorite = () => {
-        setIsFavorite(!isFavorite);
-    };
+  
+
+    
 
     const openModal = () => {
         setIsModalOpen(true);
@@ -61,10 +61,10 @@ function ProductCard({ product }) {
                 <button
                     type="button"
                     className="absolute top-2 right-2 focus:outline-none"
-                    onClick={toggleFavorite}>
+                    onClick={onToggleFavorite}>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className={`h-8 w-8 ${isFavorite ? 'text-red-500' : 'text-gray-500'}`}
+                        className={`h-8 w-8 ${isfavorited ? 'text-red-500' : 'text-gray-500'}`}
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor">
@@ -73,7 +73,7 @@ function ProductCard({ product }) {
                             strokeLinejoin="round"
                             strokeWidth={2}
                             d={
-                                isFavorite
+                                isfavorited
                                     ? 'M12 21l-1.314-1.257C5.486 15.314 2 12.101 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.321.894 4.5 2.278C12.179 3.894 13.759 3 15.5 3 18.58 3 21 5.42 21 8.5c0 3.601-3.486 6.814-8.686 11.243L12 21z'
                                     : 'M12 21l-1.314-1.257C5.486 15.314 2 12.101 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.321.894 4.5 2.278C12.179 3.894 13.759 3 15.5 3 18.58 3 21 5.42 21 8.5c0 3.601-3.486 6.814-8.686 11.243L12 21z'
                             } />
@@ -98,7 +98,10 @@ function ProductCard({ product }) {
             </div>
             
             {/* Code for opening and closing modal */}
-            {isModalOpen && <ProductModal product={product} onClose={closeModal} />}
+            {isModalOpen && <ProductModal product={product} onClose={closeModal} onFavorited={onToggleFavorite} />}
+           
+
+        
         </div>
 
     );

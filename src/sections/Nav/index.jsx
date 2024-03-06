@@ -3,9 +3,11 @@ import logo from "../../assets/images/Logo.png";
 import "./style.css";
 
 
-const MyNav = () => {
+const MyNav = ({favorites}) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [displayFavorites, setDisplayFavorites] = useState(false);
+
 
   // Function to open the dropdown menu
   const openDropdown = () => {
@@ -24,6 +26,14 @@ const MyNav = () => {
       setDropdownOpen(false); // Close the dropdown when toggling mobile menu
     }
   };
+
+  // Function to display favorited items
+  const DisplayFavoriteItems = (displayFavorites, clickEvent )  => {
+    
+    clickEvent.preventDefault();
+    
+    setDisplayFavorites(displayFavorites);
+  }
 
   return (
     <>
@@ -90,11 +100,25 @@ const MyNav = () => {
                 </a>
               </div>
             </div>
-            <a href="#" className="text-lg">
+            {/* Favorite Button */}
+            <a href="" className="text-lg" onClick={(e) => DisplayFavoriteItems(!displayFavorites, e)}>
+        {/* Favorite button icon */}
               <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
                 <path d="M12 21.35l-1.45-1.32C5.4 15.72 2 12.32 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.82-3.4 7.22-8.55 11.53L12 21.35z" />
               </svg>
             </a>
+            {/* Display favorited items list */}
+      {displayFavorites && (
+        <div className="absolute top-14 right-0 bg-white w-48 mt-2 p-2 rounded-md shadow-md">
+          <h2 className="text-lg font-bold mb-2">Favorited Items</h2>
+          <ul>
+            {/* Iterate favorited items and display */}
+            {favorites.map((favorite) => (
+              <li key={favorite.id}>{favorite.item}</li>
+            ))}
+          </ul>
+        </div>
+      )}
             <div className="flex items-center sm:hidden">
               <button
                 onClick={toggleMenu}
@@ -118,9 +142,8 @@ const MyNav = () => {
           </div>
         </div>
       </nav>
-
-      {/* Mobile Menu */}
-      <div id='drop'
+{/* Mobile Menu */}
+<div id='drop'
         className={`${menuOpen ? "block mobileMenu" : "hidden"
           } sm:hidden`}
       >

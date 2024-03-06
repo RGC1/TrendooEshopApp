@@ -4,7 +4,7 @@ import ProductCard from '../../sections/ProductCard';
 
 import './style.css';
 
-const ProjectGallery = () => {
+const ProjectGallery = ({onToggleFavorite, favoriteMap}) => {
   const [popularProducts, setPopularProducts] = useState([]);
   const [womenProducts, setWomenProducts] = useState([]);
   const [displayedWomenProducts, setDisplayedWomenProducts] = useState(4);
@@ -123,7 +123,9 @@ const ProjectGallery = () => {
           <h2 className="titleProducts flex flex-wrap justify-center">Most Popular</h2>
           <div className="flex flex-wrap justify-center">
             {popularProducts.map((product) => (
-              <ProductCard key={product.id} product={product} />
+              <ProductCard key={product.id} product={product} onToggleFavorite={() => onToggleFavorite(product.id)}
+              isfavorited={favoriteMap[product.id]} />
+
             ))}
           </div>
         </div>
@@ -134,12 +136,13 @@ const ProjectGallery = () => {
 
           {/* Filters for women products */}
           <div className="flex justify-center mt-4">
-            <button
-              className="buttonProducts text-white py-1 px-3 rounded"
-              onClick={() => setShowFilters(!showFilters)}
-            >
-              Filters
-            </button>
+          <button
+  className="buttonProducts text-white py-1 px-3 rounded"
+  onClick={() => setShowFilters(!showFilters)}
+>
+  Filters {Object.keys(favoriteMap).length > 0 ? JSON.stringify(favoriteMap) : ''}
+</button>
+
             {showFilters && (
               <div className="flex items-center">
                 <label className="inline-block mr-4 ml-4 mb-6">
@@ -175,7 +178,8 @@ const ProjectGallery = () => {
 
           <div className="flex flex-wrap justify-center">
             {womenProducts.slice(0, displayedWomenProducts).map((product) => (
-              <ProductCard key={product.id} product={product} />
+              <ProductCard key={product.id} product={product} onToggleFavorite={() => onToggleFavorite(product.id)}
+              isfavorited={favoriteMap[product.id]}/>
             ))}
           </div>
           {/* Coditional for showing women cards, if the products are more then 4 in total, the button will be render with the onClick event LoadMoreWomenProducts*/}
@@ -230,7 +234,8 @@ const ProjectGallery = () => {
 
           <div className="flex flex-wrap justify-center">
             {menProducts.slice(0, displayedMenProducts).map((product) => (
-              <ProductCard key={product.id} product={product} />
+              <ProductCard key={product.id} product={product} onToggleFavorite={() => onToggleFavorite(product.id)}
+              isfavorited={favoriteMap[product.id]} />
             ))}
           </div>
           {/* Coditional for showing women cards, if the products are more then 4 in total, the button will be render with the onClick event LoadMoreWomenProducts*/}
