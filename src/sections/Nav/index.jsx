@@ -25,17 +25,19 @@ const MyNav = () => {
     }
   };
 
+  // Function to show favorited items
+
   return (
     <>
       <nav id="nav">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex items-center justify-between h-16">
             <div >
-              <a href="/" className="flex items-end">
+              <a href="/" className="flex items-end mt-6">
                 <img src={logo} alt="logo" height={250} width={250} />
               </a>
             </div>
-            <div className="hidden sm:block sm:ml-6">
+            <div className="hidden sm:block sm:ml-6 mt-6">
               <div className="flex space-x-4">
                 <a
                   href="#home"
@@ -51,14 +53,14 @@ const MyNav = () => {
                 </a>
                 <button
                   onMouseEnter={openDropdown}
-                  className="rounded-md px-3 py-2 text-sm font-medium"
+                  className="rounded-md px-3 py-2 text-sm font-medium bg-[#545454] "
                 >
                   PRODUCTS
                 </button>
                 {dropdownOpen && (
                   <div
                     id="dropdownNavbar"
-                    className="absolute mt-8 w-48 rounded-lg shadow-lg"
+                    className="absolute mt-8 w-48 rounded-lg shadow-lg;"
                     onMouseEnter={openDropdown}
                     onMouseLeave={closeDropdown}
                     style={{
@@ -90,7 +92,9 @@ const MyNav = () => {
                 </a>
               </div>
             </div>
-            <a href="#" className="text-lg">
+            {/* Favorite Button */}
+            <a href="#" className="text-lg" onClick={() => setDisplayFavorites(!displayFavorites)}>
+        {/* Favorite button icon */}
               <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
                 <path d="M12 21.35l-1.45-1.32C5.4 15.72 2 12.32 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.82-3.4 7.22-8.55 11.53L12 21.35z" />
               </svg>
@@ -127,13 +131,13 @@ const MyNav = () => {
         <div className=" pt-2 pb-3 space-y-1">
           <a
             href="#home"
-            className="block px-3 py-2 text-base font-small "
+            className="block px-3 py-2 text-white font-small "
           >
             HOME
           </a>
           <a
             href="#about"
-            className="block px-3 py-2 text-base font-small"
+            className="block px-3 py-2 text-white font-small"
           >
             ABOUT US
           </a>
@@ -141,7 +145,7 @@ const MyNav = () => {
           {menuOpen && (
             <div id="mobileDropdown" className="block sm:hidden">
               <button
-                className="block px-3 py-2 text-base font-small"
+                className="block px-3 py-2 text-white font-small"
                 onClick={openDropdown}
               >
                 PRODUCTS
@@ -176,7 +180,7 @@ const MyNav = () => {
 
           <a
             href="#footer"
-            className="block px-3 py-2 text-base font-small"
+            className="block px-3 py-2 text-white font-small"
           >
             CONTACT US
           </a>
