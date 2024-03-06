@@ -66,7 +66,7 @@ const Subscribe = () => {
 
   return (
 
-    <section id="contact-us" className="bg-[#f8f6f2] container max-sm:mt-12 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-4 px-12">
+    <section id="contact-us" className="bg-[#f8f6f2] container max-sm:mt-12 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-10 px-12">
       <div>
         <h3 className="text-4xl leading-[68px] text-center font-bold text-black" id="about">
           About Us
