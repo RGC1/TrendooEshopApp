@@ -39,12 +39,12 @@ const ProjectGallery = ({ onToggleFavorite, favoriteMap }) => {
     // Check how many checkboxes are checked
     const numCheckboxesChecked = [filterByShirtsWomen, filterByTShirtsWomen, filterByBlouserWomen].filter(Boolean).length;
 
-    // // If no checkboxes are checked, display all women products
-    // if (numCheckboxesChecked === 0) {
-    //   setDisplayedWomenProducts(filteredWomenProducts.length);
-    //   setWomenProducts(filteredWomenProducts);
-    //   return;
-    // }
+    // If no checkboxes are checked, display 4 women products
+    if (numCheckboxesChecked === 0) {
+      setDisplayedWomenProducts(4);
+      setWomenProducts(filteredWomenProducts);
+      return;
+    }
 
     // If all checkboxes are checked, load all products
     if (numCheckboxesChecked === 3) {
@@ -90,6 +90,15 @@ const ProjectGallery = ({ onToggleFavorite, favoriteMap }) => {
   // Function to filter the property category for men products and to check if any additional filer has been applied by the user.
   const filterMenProducts = () => {
     let filteredMenProducts = products.filter((product) => product.category === 'men');
+
+    const numCheckboxesChecked = [filterByShirts, filterByTShirts].filter(Boolean).length;
+
+    // If no checkboxes are checked, display 4 men products
+    if (numCheckboxesChecked === 0) {
+      setDisplayedMenProducts(4);
+      setMenProducts(filteredMenProducts);
+      return;
+    }
 
     // If both filters are checked, load all men products
     if (filterByShirts && filterByTShirts) {
