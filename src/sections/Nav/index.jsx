@@ -34,11 +34,11 @@ const MyNav = () => {
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex items-center justify-between h-16">
             <div >
-              <a href="/" className="flex items-end">
+              <a href="/" className="flex items-end mt-6">
                 <img src={logo} alt="logo" height={250} width={250} />
               </a>
             </div>
-            <div className="hidden sm:block sm:ml-6">
+            <div className="hidden sm:block sm:ml-6 mt-6">
               <div className="flex space-x-4">
                 <a
                   href="#home"
@@ -54,14 +54,14 @@ const MyNav = () => {
                 </a>
                 <button
                   onMouseEnter={openDropdown}
-                  className="rounded-md px-3 py-2 text-sm font-medium"
+                  className="rounded-md px-3 py-2 text-sm font-medium bg-[#545454] "
                 >
                   PRODUCTS
                 </button>
                 {dropdownOpen && (
                   <div
                     id="dropdownNavbar"
-                    className="absolute mt-8 w-48 rounded-lg shadow-lg"
+                    className="absolute mt-8 w-48 rounded-lg shadow-lg;"
                     onMouseEnter={openDropdown}
                     onMouseLeave={closeDropdown}
                     style={{

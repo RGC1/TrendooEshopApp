@@ -1,65 +1,77 @@
-# <Your-Project-Title>
+# Trendoo
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+Trendoo was invented as a trendy, avant-garde fashion label known for its innovative designs and cutting-edge styles. Our mission is to provide a seamless online shopping experience for individuals who appreciate quality and unique clothing options.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+## Table of Contents
 
-## Table of Contents (Optional)
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
+- [Installation](#development)
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
+- [Badges](#badges)
 
-## Installation
+## Development
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+This app was created using:
+- [React](https://react.dev/), a Javascript library;
+- [Vite](https://vitejs.dev/), a build tool for React;
+- [Tailwind](https://tailwindcss.com/), a CSS library.
+
+Install dependencies using:
+
+- ```npm i``` for installation of node.js;
+- ```npm i axios``` to install axios;
+- ```npm i -D tailwindcss``` for tailwind;
+- ```npm i flowbite-react flowbite``` to install flowbite plugin.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+- Once the page is open you can check the products by going into the ```Categories``` section and pick between Men and Women sections.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+- Clicking on each item will give you a description of the product and there's also an option to add it to ```Favourites``` with the heart on the right hand side.
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+- There's also an option to filter the products in the options given like T-shirts, shirts, etc.
+
+- You can check more products by clicking on the ```Explore More``` button.
+
+- You can connect with us through social media by picking which one you prefer and add your email.
+
+
+![short showcase of website](./src/assets/images/TrendooWebsite.gif)
+
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+<a href="https://github.com/beatak777">Bea Konya's GitHub</a>
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+<a href="https://github.com/giadasponzilli">Giada Sponzilli's GitHub</a>
 
-If you followed tutorials, include links to those here as well.
+<a href="https://github.com/idareis">Ida Reis's GitHub</a>
+
+<a href="https://github.com/RGC1">Ramona Cirlan's GitHub</a>
+
+<a href="https://github.com/RaphaGil">Raphaela Gil's GitHub</a>
+
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+Copyright (c) 2024 Bea Konya, Giada Sponzilli, Ida Reis, Ramona Cirlan, Raphaela Gil
 
----
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## Badges
 
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Axios](https://img.shields.io/badge/axios-671ddf?&style=for-the-badge&logo=axios&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)

@@ -1,8 +1,7 @@
 #drop,
 nav {
   height: 25mm;
-  background-color: #545454;;
-
+  background-color:#545454;
   size: 40px;
 }
 
@@ -12,12 +11,13 @@ nav a{
   color: white;
   text-decoration: none;
 }
+
 #drop {
   height: 50mm;
 }
 
 #dropdownNavbar{
-  background-color: #545454;;
+  background-color: #545454;
 }
 
 a:hover{
