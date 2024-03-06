@@ -61,7 +61,7 @@ const MyNav = () => {
                 {dropdownOpen && (
                   <div
                     id="dropdownNavbar"
-                    className="absolute mt-8 w-48 rounded-lg shadow-lg;"
+                    className="absolute mt-8 w-48 rounded-lg shadow-lg"
                     onMouseEnter={openDropdown}
                     onMouseLeave={closeDropdown}
                     style={{
@@ -143,13 +143,13 @@ const MyNav = () => {
         <div className=" pt-2 pb-3 space-y-1">
           <a
             href="#home"
-            className="block px-3 py-2 text-white font-small "
+            className="block px-3 py-2 text-base font-small "
           >
             HOME
           </a>
           <a
             href="#about"
-            className="block px-3 py-2 text-white font-small"
+            className="block px-3 py-2 text-base font-small"
           >
             ABOUT US
           </a>
@@ -157,7 +157,7 @@ const MyNav = () => {
           {menuOpen && (
             <div id="mobileDropdown" className="block sm:hidden">
               <button
-                className="block px-3 py-2 text-white font-small"
+                className="block px-3 py-2 text-base font-small"
                 onClick={openDropdown}
               >
                 PRODUCTS
@@ -192,7 +192,7 @@ const MyNav = () => {
 
           <a
             href="#footer"
-            className="block px-3 py-2 text-white font-small"
+            className="block px-3 py-2 text-base font-small"
           >
             CONTACT US
           </a>
