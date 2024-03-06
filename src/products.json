@@ -3,7 +3,7 @@
     "id": 1,
     "item": "Chenille T-shirt",
     "description": "A boxy tee made from super soft chenille - 100% Polyester",
-    "image": "./images/Women/Tshirts/t-shirtWomen1.jpg",
+    "image": "/images/Women/Tshirts/t-shirtWomen1.jpg",
     "price": 10.00,
     "category": "women",
     "subcategory": "tshirt"
@@ -54,7 +54,7 @@
     "id": 6,
     "item": "Crewneck Boxy",
     "description": "Take your everyday essentials to a new level with this stretch T-shirt - 100% Cotton ",
-    "image": "./images/Women/Blouser/blouserWomen1.jpg",
+    "image": "../src/assets/images/Women/Shirts/shirtWomen1.jpg",
     "price": 14.00,
     "category": "women",
     "subcategory": "shirt"
@@ -63,7 +63,7 @@
     "id": 7,
     "item": "Paula Echevarría Padded Racer Vest",
     "description": "Add a supportive touch to your casual wardrobe with our padded vest! - 96% Cotton, 4% Elastane",
-    "image": "./images/Women/Blouser/blouserWomen2.jpg",
+    "image": "../src/assets/images/Women/Shirts/shirtWomen2.jpg",
     "price": 13.00,
     "category": "women",
     "subcategory": "shirt",
@@ -73,16 +73,16 @@
     "id": 8,
     "item": "Oversized Graphic",
     "description": "This tee smells like a style statement to us! - 100% Cotton",
-    "image": "./images/Women/Blouser/blouserWomen3.jpg",
+    "image": "../src/assets/images/Women/Shirts/shirtWomen3.jpg",
     "price": 17.00,
     "category": "women",
-    "subcategory": "blouser"
+    "subcategory": "shirt"
   },
   {
     "id": 9,
     "item": "2pk Stretch Vests",
     "description": "Time to refresh your vests! - 95% Cotton, 5% Elastane",
-    "image": "./images/Women/Blouser/blouserWomen4.jpg",
+    "image": "../src/assets/images/Women/Shirts/shirtWomen4.jpg",
     "price": 20.00,
     "category": "women",
     "subcategory": "shirt"
@@ -91,10 +91,10 @@
     "id": 10,
     "item": "Performance Blouser Chic",
     "description": "Slay your next workout class with this sleek sports bra! - Polyester 87% Elastane 13%",
-    "image": "./images/Women/Blouser/blouserWomen5.jpg",
+    "image": "../src/assets/images/Women/Blouser/blouser1.jpg",
     "price": 22.00,
     "category": "women",
-    "subcategory": "shirt"
+    "subcategory": "blouser"
   },
   {
     "id": 11,
@@ -248,5 +248,50 @@
     "category": "men",
     "subcategory": "tshirt"
 
-  }
+  },
+  {
+  "id": 27,
+  "item": "Chenille T-shirt",
+  "description": "A boxy tee made from super soft chenille - 100% Polyester",
+  "image": "../src/assets/images/Women/Tshirts/t-shirtWomen6.jpg",
+  "price": 10.00,
+  "category": "women",
+  "subcategory": "tshirt"
+},
+{
+  "id": 28,
+  "item": "Chenille T-shirt",
+  "description": "A boxy tee made from super soft chenille - 100% Polyester",
+  "image": "../src/assets/images/Women/Tshirts/t-shirtWomen7.jpg",
+  "price": 10.00,
+  "category": "women",
+  "subcategory": "tshirt"
+},
+{
+  "id": 29,
+  "item": "Chenille T-shirt",
+  "description": "A boxy tee made from super soft chenille - 100% Polyester",
+  "image": "../src/assets/images/Women/Tshirts/t-shirtWomen8.jpg",
+  "price": 10.00,
+  "category": "women",
+  "subcategory": "tshirt"
+},
+{
+  "id": 30,
+  "item": "Chenille T-shirt",
+  "description": "A boxy tee made from super soft chenille - 100% Polyester",
+  "image": "../src/assets/images/Women/Tshirts/t-shirtWomen9.jpg",
+  "price": 10.00,
+  "category": "women",
+  "subcategory": "tshirt"
+},
+{
+  "id": 31,
+  "item": "Chenille T-shirt",
+  "description": "A boxy tee made from super soft chenille - 100% Polyester",
+  "image": "../src/assets/images/Women/Tshirts/t-shirtWomen10.jpg",
+  "price": 10.00,
+  "category": "women",
+  "subcategory": "tshirt"
+}
 ]
