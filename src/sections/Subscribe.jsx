@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import './Subscribe.css'
 
@@ -24,6 +24,19 @@ const Subscribe = () => {
   const handleSubscriptionSubmit = () => {
     // You can handle the subscription data as needed, send it to a server
     console.log('Subscription submitted:', subscriptionData);
+
+    // Get existing subscription data from local storage or initialize an empty array
+    const existingData = JSON.parse(localStorage.getItem('subscriptionData')) || [];
+
+    // Add the new subscription data along with the current date
+    existingData.push({
+      email: subscriptionData.email,
+      date: new Date().toLocaleString(), // Add the current date and time
+    });
+
+    // Save the updated array to local storage
+    localStorage.setItem('subscriptionData', JSON.stringify(existingData));
+
     // Reset the input fields after submission
     setSubscriptionData({
       email: '',
@@ -40,15 +53,26 @@ const Subscribe = () => {
     }
   };
 
+  // Load email from local storage on component mount
+  useEffect(() => {
+    const storedEmail = localStorage.getItem('email');
+    if (storedEmail) {
+      setSubscriptionData((prevData) => ({
+        ...prevData,
+        email: storedEmail,
+      }));
+    }
+  }, []);
+
   return (
 
-    <section id="contact-us" className="bg-[#f8f6f2] container max-sm:mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 px-12">
+    <section id="contact-us" className="bg-[#f8f6f2] container max-sm:mt-12 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-4 px-12">
       <div>
         <h3 className="text-4xl leading-[68px] text-center font-bold text-black" id="about">
           About Us
         </h3>
-        <p className='text-center p-2'>
-          Trendoo was invented as a trendy, avant-garde fashion label known for its innovative designs and cutting-edge styles. We are a group of five passionate students dedicated to honing our skills in Front End Web Development. Our mission is to provide a seamless online shopping experience for individuals who appreciate quality and unique clothing options. Explore our collection of comfortable attire tailored for both women and men. Select your favorite items and proceed to the store to make your purchase while they're still in stock.
+        <p className='text-justify p-2'>
+          Trendoo was invented as a trendy, avant-garde fashion label known for its innovative designs and cutting-edge styles. We are a group of five passionate students dedicated to honing our skills in Front End Web Development. Our mission is to provide a seamless online shopping experience for individuals who appreciate quality and unique clothing options. Explore our collection of comfortable attire tailored for both women and men. 
         </p>
       </div>
       <div>
@@ -67,7 +91,7 @@ const Subscribe = () => {
                 name="youtube"
                 checked={subscriptionData.youtube}
                 onChange={handleInputChange}
-                className="form-checkbox text-black"
+                className="form-checkbox text-black myCheckbox"
               />
               <span className="text-black hover:underline ml-2">YouTube</span>
             </label>
@@ -78,7 +102,7 @@ const Subscribe = () => {
                 name="instagram"
                 checked={subscriptionData.instagram}
                 onChange={handleInputChange}
-                className="form-checkbox text-black"
+                className="form-checkbox text-black myCheckbox"
               />
               <span className="text-black hover:underline ml-2">Instagram</span>
             </label>
@@ -87,7 +111,7 @@ const Subscribe = () => {
             <input
               type="text"
               placeholder="subscribe@trendoo.com"
-              className="input p-2 rounded-xl"
+              className="input p-2 rounded-xl myCheckbox"
               name="email"
               value={subscriptionData.email}
               onChange={handleInputChange}

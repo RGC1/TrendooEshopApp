@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProductModal = ({ product, onClose }) => {
+const ProductModal = ({ product, onClose, onFavorited, isfavorite }) => {
   return (
     <div className="relative z-10" role="dialog" aria-modal="true">
       <div className="fixed inset-0 hidden bg-gray-500 bg-opacity-75 transition-opacity md:block"></div>
@@ -20,7 +20,7 @@ const ProductModal = ({ product, onClose }) => {
             <p className="text-lg text-gray-900 mt-3">£{product.price}</p>
             <p className="text-base text-gray-700 mt-4">{product.description}</p>
             <div className="flex justify-center mt-6">
-              <button type="submit" className="buttonProducts flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Add to favourite</button>
+              <button type="submit" className="buttonProducts flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2" onClick={onFavorited}>{isfavorite ? "Remove from Favorites" : "Add to Favorites"}</button>
             </div>
           </div>
         </div>

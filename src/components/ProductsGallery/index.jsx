@@ -4,7 +4,7 @@ import ProductCard from '../../sections/ProductCard';
 
 import './style.css';
 
-const ProjectGallery = () => {
+const ProjectGallery = ({ onToggleFavorite, favoriteMap }) => {
   const [popularProducts, setPopularProducts] = useState([]);
   const [womenProducts, setWomenProducts] = useState([]);
   const [displayedWomenProducts, setDisplayedWomenProducts] = useState(4);
@@ -38,6 +38,13 @@ const ProjectGallery = () => {
 
     // Check how many checkboxes are checked
     const numCheckboxesChecked = [filterByShirtsWomen, filterByTShirtsWomen, filterByBlouserWomen].filter(Boolean).length;
+
+    // If no checkboxes are checked, display 4 women products
+    if (numCheckboxesChecked === 0) {
+      setDisplayedWomenProducts(4);
+      setWomenProducts(filteredWomenProducts);
+      return;
+    }
 
     // If all checkboxes are checked, load all products
     if (numCheckboxesChecked === 3) {
@@ -84,6 +91,15 @@ const ProjectGallery = () => {
   const filterMenProducts = () => {
     let filteredMenProducts = products.filter((product) => product.category === 'men');
 
+    const numCheckboxesChecked = [filterByShirts, filterByTShirts].filter(Boolean).length;
+
+    // If no checkboxes are checked, display 4 men products
+    if (numCheckboxesChecked === 0) {
+      setDisplayedMenProducts(4);
+      setMenProducts(filteredMenProducts);
+      return;
+    }
+
     // If both filters are checked, load all men products
     if (filterByShirts && filterByTShirts) {
       filteredMenProducts = filteredMenProducts.filter(
@@ -123,7 +139,9 @@ const ProjectGallery = () => {
           <h2 className="titleProducts flex flex-wrap justify-center">Most Popular</h2>
           <div className="flex flex-wrap justify-center">
             {popularProducts.map((product) => (
-              <ProductCard key={product.id} product={product} />
+              <ProductCard key={product.id} product={product} onToggleFavorite={() => onToggleFavorite(product.id)}
+                isfavorited={favoriteMap[product.id]} />
+
             ))}
           </div>
         </div>
@@ -140,30 +158,31 @@ const ProjectGallery = () => {
             >
               Filters
             </button>
+
             {showFilters && (
               <div className="flex items-center">
-                <label className="inline-block mr-4 ml-4 mb-6">
+                <label className="inline-block mr-4 ml-4 mb-7">
                   <input
                     type="checkbox"
-                    className="mr-2"
+                    className="mr-2 myCheckbox"
                     checked={filterByShirtsWomen}
                     onChange={() => setFilterByShirtsWomen(!filterByShirtsWomen)}
                   />
                   Shirts
                 </label>
-                <label className="inline-block mr-4 mb-6">
+                <label className="inline-block mr-4 mb-7">
                   <input
                     type="checkbox"
-                    className="mr-2"
+                    className="mr-2 myCheckbox"
                     checked={filterByTShirtsWomen}
                     onChange={() => setFilterByTShirtsWomen(!filterByTShirtsWomen)}
                   />
                   T-Shirts
                 </label>
-                <label className="inline-block mb-6">
+                <label className="inline-block mb-7">
                   <input
                     type="checkbox"
-                    className="mr-2"
+                    className="mr-2 myCheckbox"
                     checked={filterByBlouserWomen}
                     onChange={() => setFilterByBlouserWomen(!filterByBlouserWomen)}
                   />
@@ -175,19 +194,23 @@ const ProjectGallery = () => {
 
           <div className="flex flex-wrap justify-center">
             {womenProducts.slice(0, displayedWomenProducts).map((product) => (
-              <ProductCard key={product.id} product={product} />
+              <ProductCard key={product.id} product={product} onToggleFavorite={() => onToggleFavorite(product.id)}
+                isfavorited={favoriteMap[product.id]} />
             ))}
           </div>
           {/* Coditional for showing women cards, if the products are more then 4 in total, the button will be render with the onClick event LoadMoreWomenProducts*/}
           {womenProducts.length > 4 && (
             <div className="text-center">
-              <button
-                onClick={loadMoreWomenProducts}
-                className="buttonProducts mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-              >
-                {/* Ternary operator used inside the button's text. If displayedWomenProducts is equal to 4, it displays "Explore more"; otherwise, it displays "Explore less".*/}
-                {displayedWomenProducts === 4 ? 'Explore more' : 'Explore less'}
-              </button>
+              <a href="#sectionWomen">
+                <button
+                  onClick={loadMoreWomenProducts}
+                  className="buttonProducts mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                >
+
+                  {/* Ternary operator used inside the button's text. If displayedWomenProducts is equal to 4, it displays "Explore more"; otherwise, it displays "Explore less".*/}
+                  {displayedWomenProducts === 4 ? 'Explore more' : 'Explore less'}
+                </button>
+              </a>
             </div>
           )}
         </div>
@@ -206,19 +229,19 @@ const ProjectGallery = () => {
             </button>
             {showFilters && (
               <div className="flex items-center">
-                <label className="inline-block mr-4 ml-4 mb-6">
+                <label className="inline-block mr-4 ml-4 mb-7">
                   <input
                     type="checkbox"
-                    className="mr-2"
+                    className="mr-2 myCheckbox"
                     checked={filterByShirts}
                     onChange={() => setFilterByShirts(!filterByShirts)}
                   />
                   Shirts
                 </label>
-                <label className="inline-block mb-6">
+                <label className="inline-block mb-7">
                   <input
                     type="checkbox"
-                    className="mr-2"
+                    className="mr-2 myCheckbox"
                     checked={filterByTShirts}
                     onChange={() => setFilterByTShirts(!filterByTShirts)}
                   />
@@ -230,19 +253,22 @@ const ProjectGallery = () => {
 
           <div className="flex flex-wrap justify-center">
             {menProducts.slice(0, displayedMenProducts).map((product) => (
-              <ProductCard key={product.id} product={product} />
+              <ProductCard key={product.id} product={product} onToggleFavorite={() => onToggleFavorite(product.id)}
+                isfavorited={favoriteMap[product.id]} />
             ))}
           </div>
           {/* Coditional for showing women cards, if the products are more then 4 in total, the button will be render with the onClick event LoadMoreWomenProducts*/}
           {menProducts.length > 4 && (
             <div className="text-center">
-              <button
-                onClick={loadMoreMenProducts}
-                className="buttonProducts mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-              >
-                {/* Ternary operator used inside the button's text. If displayedWomenProducts is equal to 4, it displays "Explore more"; otherwise, it displays "Explore less".*/}
-                {displayedMenProducts === 4 ? 'Explore more' : 'Explore less'}
-              </button>
+              <a href="#sectionMen">
+                <button
+                  onClick={loadMoreMenProducts}
+                  className="buttonProducts mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                >
+                  {/* Ternary operator used inside the button's text. If displayedWomenProducts is equal to 4, it displays "Explore more"; otherwise, it displays "Explore less".*/}
+                  {displayedMenProducts === 4 ? 'Explore more' : 'Explore less'}
+                </button>
+              </a>
             </div>
           )}
         </div>
