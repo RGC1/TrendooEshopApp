@@ -72,7 +72,7 @@ const MyNav = ({favorites}) => {
                     onMouseEnter={openDropdown}
                     onMouseLeave={closeDropdown}
                     style={{
-                      left: "50%",
+                      left: "53.5%",
                     }}
                   >
                     <ul
@@ -177,17 +177,17 @@ const MyNav = ({favorites}) => {
                   onMouseLeave={closeDropdown}
                   style={{
                     left: "32%",
-                    top: "1.3%"
+                    top: "1.7%"
                   }}
                 >
                   <ul className="py-2 text-sm" aria-labelledby="dropdownLargeButton">
                     <li>
-                      <a href="#sectionWomen" className="block px-4 py-2">
+                      <a href="#sectionWomen" className="block text-white px-4 py-2">
                         WOMEN
                       </a>
                     </li>
                     <li>
-                      <a href="#sectionMen" className="block px-4 py-2">
+                      <a href="#sectionMen" className="block text-white px-4 py-2">
                         MEN
                       </a>
                     </li>

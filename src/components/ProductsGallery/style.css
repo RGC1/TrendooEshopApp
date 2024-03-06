@@ -11,14 +11,22 @@
 
 .buttonProducts {
   margin-bottom: 30px;
-  background-color: #53bee1;
+  background-color: #545454;
+  border: 1px solid #4b4b4b;
 }
 
 .buttonProducts:hover {
-  background-color: #0baee4;
+  color: #545454;
+  background-color: #C1FF72;
+  font-weight: 600;
 }
 
 .textCard {
   font-size: 18px;
+}
+
+.myCheckbox {
+  border: 1px solid #545454;
+  border-radius: 3px;
 }
 

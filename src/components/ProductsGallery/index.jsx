@@ -39,6 +39,13 @@ const ProjectGallery = ({ onToggleFavorite, favoriteMap }) => {
     // Check how many checkboxes are checked
     const numCheckboxesChecked = [filterByShirtsWomen, filterByTShirtsWomen, filterByBlouserWomen].filter(Boolean).length;
 
+    // // If no checkboxes are checked, display all women products
+    // if (numCheckboxesChecked === 0) {
+    //   setDisplayedWomenProducts(filteredWomenProducts.length);
+    //   setWomenProducts(filteredWomenProducts);
+    //   return;
+    // }
+
     // If all checkboxes are checked, load all products
     if (numCheckboxesChecked === 3) {
       filteredWomenProducts = filteredWomenProducts.filter(
@@ -145,28 +152,28 @@ const ProjectGallery = ({ onToggleFavorite, favoriteMap }) => {
 
             {showFilters && (
               <div className="flex items-center">
-                <label className="inline-block mr-4 ml-4 mb-6">
+                <label className="inline-block mr-4 ml-4 mb-7">
                   <input
                     type="checkbox"
-                    className="mr-2"
+                    className="mr-2 myCheckbox"
                     checked={filterByShirtsWomen}
                     onChange={() => setFilterByShirtsWomen(!filterByShirtsWomen)}
                   />
                   Shirts
                 </label>
-                <label className="inline-block mr-4 mb-6">
+                <label className="inline-block mr-4 mb-7">
                   <input
                     type="checkbox"
-                    className="mr-2"
+                    className="mr-2 myCheckbox"
                     checked={filterByTShirtsWomen}
                     onChange={() => setFilterByTShirtsWomen(!filterByTShirtsWomen)}
                   />
                   T-Shirts
                 </label>
-                <label className="inline-block mb-6">
+                <label className="inline-block mb-7">
                   <input
                     type="checkbox"
-                    className="mr-2"
+                    className="mr-2 myCheckbox"
                     checked={filterByBlouserWomen}
                     onChange={() => setFilterByBlouserWomen(!filterByBlouserWomen)}
                   />
@@ -185,13 +192,16 @@ const ProjectGallery = ({ onToggleFavorite, favoriteMap }) => {
           {/* Coditional for showing women cards, if the products are more then 4 in total, the button will be render with the onClick event LoadMoreWomenProducts*/}
           {womenProducts.length > 4 && (
             <div className="text-center">
-              <button
-                onClick={loadMoreWomenProducts}
-                className="buttonProducts mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-              >
-                {/* Ternary operator used inside the button's text. If displayedWomenProducts is equal to 4, it displays "Explore more"; otherwise, it displays "Explore less".*/}
-                {displayedWomenProducts === 4 ? 'Explore more' : 'Explore less'}
-              </button>
+              <a href="#sectionWomen">
+                <button
+                  onClick={loadMoreWomenProducts}
+                  className="buttonProducts mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                >
+
+                  {/* Ternary operator used inside the button's text. If displayedWomenProducts is equal to 4, it displays "Explore more"; otherwise, it displays "Explore less".*/}
+                  {displayedWomenProducts === 4 ? 'Explore more' : 'Explore less'}
+                </button>
+              </a>
             </div>
           )}
         </div>
@@ -210,19 +220,19 @@ const ProjectGallery = ({ onToggleFavorite, favoriteMap }) => {
             </button>
             {showFilters && (
               <div className="flex items-center">
-                <label className="inline-block mr-4 ml-4 mb-6">
+                <label className="inline-block mr-4 ml-4 mb-7">
                   <input
                     type="checkbox"
-                    className="mr-2"
+                    className="mr-2 myCheckbox"
                     checked={filterByShirts}
                     onChange={() => setFilterByShirts(!filterByShirts)}
                   />
                   Shirts
                 </label>
-                <label className="inline-block mb-6">
+                <label className="inline-block mb-7">
                   <input
                     type="checkbox"
-                    className="mr-2"
+                    className="mr-2 myCheckbox"
                     checked={filterByTShirts}
                     onChange={() => setFilterByTShirts(!filterByTShirts)}
                   />
@@ -241,13 +251,15 @@ const ProjectGallery = ({ onToggleFavorite, favoriteMap }) => {
           {/* Coditional for showing women cards, if the products are more then 4 in total, the button will be render with the onClick event LoadMoreWomenProducts*/}
           {menProducts.length > 4 && (
             <div className="text-center">
-              <button
-                onClick={loadMoreMenProducts}
-                className="buttonProducts mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-              >
-                {/* Ternary operator used inside the button's text. If displayedWomenProducts is equal to 4, it displays "Explore more"; otherwise, it displays "Explore less".*/}
-                {displayedMenProducts === 4 ? 'Explore more' : 'Explore less'}
-              </button>
+              <a href="#sectionMen">
+                <button
+                  onClick={loadMoreMenProducts}
+                  className="buttonProducts mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                >
+                  {/* Ternary operator used inside the button's text. If displayedWomenProducts is equal to 4, it displays "Explore more"; otherwise, it displays "Explore less".*/}
+                  {displayedMenProducts === 4 ? 'Explore more' : 'Explore less'}
+                </button>
+              </a>
             </div>
           )}
         </div>
