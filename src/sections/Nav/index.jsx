@@ -109,7 +109,7 @@ const MyNav = ({ favorites }) => {
             </a>
             {/* Display favorited items list */}
             {displayFavorites && (
-              <div className="absolute top-14 right-0 bg-white w-80 mt-2 p-2 rounded-md shadow-md">
+              <div className="absolute top-14 right-0 bg-white w-80 mt-2 p-2 rounded-md shadow-md z-10">
                 <h2 className="text-lg font-bold mb-2">Favorited Items</h2>
                 <ul>
                   {/* Iterate favorited items and display */}
