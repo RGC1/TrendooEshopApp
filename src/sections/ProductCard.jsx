@@ -4,19 +4,7 @@ import ProductModal from '../components/CardProductModal';
 
 function ProductCard({ product, onToggleFavorite, isfavorited }) {
 
-    // const [isDescriptionVisible, setDescriptionVisible] = useState(false);
-
-
-
     const [isModalOpen, setIsModalOpen] = useState(false);
-
-    // const toggleDescription = () => {
-    //     setDescriptionVisible(!isDescriptionVisible);
-    // };
-
-  
-
-    
 
     const openModal = () => {
         setIsModalOpen(true);
@@ -44,13 +32,6 @@ function ProductCard({ product, onToggleFavorite, isfavorited }) {
                         <p className="text-lg font-bold">Quick View</p>
                     </div>
                 </div>
-
-                {/* Code for let the description appearing when the show more info button is pressed
-                {isDescriptionVisible && (
-                    <div className="absolute bottom-0 left-0 right-0 p-4 bg-white bg-opacity-70 text-base text-gray-900 text-justify">
-                        {product.description}
-                    </div>
-                )} */}
 
                 {/* Product Price div */}
                 <div className="absolute bottom-0 right-0 p-2 bg-white bg-opacity-55 rounded-tl-lg text-lg font-medium text-gray-900">
@@ -87,23 +68,12 @@ function ProductCard({ product, onToggleFavorite, isfavorited }) {
                     className="textCard mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
                     {product.item}
                 </h5>
-
-                {/* Code to toggle description on button click and change button text when description is visible
-                <button
-                    type="button"
-                    className="hover:text-gray-700 focus:outline-none"
-                    onClick={toggleDescription}>
-                    {isDescriptionVisible ? 'Less Info' : 'More Info'}
-                </button> */}
             </div>
-            
+
             {/* Code for opening and closing modal */}
-            {isModalOpen && <ProductModal product={product} onClose={closeModal} onFavorited={onToggleFavorite} />}
-           
+            {isModalOpen && <ProductModal product={product} onClose={closeModal} onFavorited={onToggleFavorite} isfavorite={isfavorited} />}
 
-        
         </div>
-
     );
 }
 
