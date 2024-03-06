@@ -16,17 +16,23 @@ export const FavoritesProvider = ({ children }) => {
     }
   };
 
+  const getFavoriteDetails = (productId) => {
+    return {
+      id: productId,
+      name: `Product ${productId}`,
+    };
+  };
 
+  return (
+    <FavoritesContext.Provider value={{ favorites, toggleFavorite, getFavoriteDetails }}>
+      {children}
+    </FavoritesContext.Provider>
+  );
+};
 
-
-
-
-
-
-
-
-
-
+export const useFavorites = () => {
+  return useContext(FavoritesContext);
+};
 
 
 export default FavoritesContext;
