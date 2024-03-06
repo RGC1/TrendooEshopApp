@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import logo from "../../assets/images/Logo.png";
+import FavoriteModal from "../../components/FavoriteModal";
+
 import "./style.css";
 
 
@@ -7,6 +9,7 @@ const MyNav = ({ favorites }) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [displayFavorites, setDisplayFavorites] = useState(false);
+  const [selectedFavorite, setSelectedFavorite] = useState(null);
 
 
   // Function to open the dropdown menu
@@ -34,6 +37,14 @@ const MyNav = ({ favorites }) => {
 
     setDisplayFavorites(displayFavorites);
   }
+
+  const openFavoriteModal = (favorite) => {
+    setSelectedFavorite(favorite);
+  };
+
+  const closeFavoriteModal = () => {
+    setSelectedFavorite(null);
+  };
 
   return (
     <>
@@ -72,7 +83,7 @@ const MyNav = ({ favorites }) => {
                     onMouseEnter={openDropdown}
                     onMouseLeave={closeDropdown}
                     style={{
-                      left: "53.5%",
+                      left: "58%",
                     }}
                   >
                     <ul
@@ -112,10 +123,20 @@ const MyNav = ({ favorites }) => {
               <div className="absolute top-14 right-0 bg-white w-80 mt-2 p-2 rounded-md shadow-md z-10">
                 <h2 className="text-lg font-bold mb-2">Favorited Items</h2>
                 <ul>
-                  {/* Iterate favorited items and display */}
                   {favorites.map((favorite) => (
                     <li key={favorite.id} className="flex items-center">
-                      <img src={favorite.image} alt={favorite.item} className="w-16 mr-2 mt-3" /><span className="mt-2">{favorite.item}</span></li>
+                      <a
+                        className="mt-2 cursor-pointer text-black flex items-center"
+                        onClick={() => openFavoriteModal(favorite)}
+                      >
+                        <img
+                          src={favorite.image}
+                          alt={favorite.item}
+                          className="w-16 mr-2 mt-3"
+                        />
+                        <span className="mt-3">{favorite.item}</span>
+                      </a>
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -206,6 +227,12 @@ const MyNav = ({ favorites }) => {
           </a>
         </div>
       </div>
+      {selectedFavorite && (
+        <FavoriteModal
+          favorite={selectedFavorite}
+          onClose={closeFavoriteModal}
+        />
+      )}
     </>
   );
 };
