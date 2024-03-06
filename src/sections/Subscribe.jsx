@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import './Subscribe.css'
 
@@ -24,6 +24,19 @@ const Subscribe = () => {
   const handleSubscriptionSubmit = () => {
     // You can handle the subscription data as needed, send it to a server
     console.log('Subscription submitted:', subscriptionData);
+
+    // Get existing subscription data from local storage or initialize an empty array
+    const existingData = JSON.parse(localStorage.getItem('subscriptionData')) || [];
+
+    // Add the new subscription data along with the current date
+    existingData.push({
+      email: subscriptionData.email,
+      date: new Date().toLocaleString(), // Add the current date and time
+    });
+
+    // Save the updated array to local storage
+    localStorage.setItem('subscriptionData', JSON.stringify(existingData));
+
     // Reset the input fields after submission
     setSubscriptionData({
       email: '',
@@ -39,6 +52,17 @@ const Subscribe = () => {
       window.open('https://www.instagram.com/trendoo', '_blank');
     }
   };
+
+  // Load email from local storage on component mount
+  useEffect(() => {
+    const storedEmail = localStorage.getItem('email');
+    if (storedEmail) {
+      setSubscriptionData((prevData) => ({
+        ...prevData,
+        email: storedEmail,
+      }));
+    }
+  }, []);
 
   return (
 
@@ -67,7 +91,7 @@ const Subscribe = () => {
                 name="youtube"
                 checked={subscriptionData.youtube}
                 onChange={handleInputChange}
-                className="form-checkbox text-black myCheckbox"
+                className="form-checkbox text-black"
               />
               <span className="text-black hover:underline ml-2">YouTube</span>
             </label>
@@ -78,7 +102,7 @@ const Subscribe = () => {
                 name="instagram"
                 checked={subscriptionData.instagram}
                 onChange={handleInputChange}
-                className="form-checkbox text-black myCheckbox"
+                className="form-checkbox text-black"
               />
               <span className="text-black hover:underline ml-2">Instagram</span>
             </label>
@@ -87,7 +111,7 @@ const Subscribe = () => {
             <input
               type="text"
               placeholder="subscribe@trendoo.com"
-              className="input p-2 rounded-xl myCheckbox"
+              className="input p-2 rounded-xl"
               name="email"
               value={subscriptionData.email}
               onChange={handleInputChange}
