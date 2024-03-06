@@ -1,11 +1,11 @@
 #drop,
 nav {
-  height: 20mm;
+  height: 25mm;
   background-color: #545454;;
 
   size: 40px;
 }
-#drop a,
+
 #drop button,
 nav button,
 nav a{
