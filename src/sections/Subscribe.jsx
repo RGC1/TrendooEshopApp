@@ -67,7 +67,7 @@ const Subscribe = () => {
                 name="youtube"
                 checked={subscriptionData.youtube}
                 onChange={handleInputChange}
-                className="form-checkbox text-black"
+                className="form-checkbox text-black myCheckbox"
               />
               <span className="text-black hover:underline ml-2">YouTube</span>
             </label>
@@ -78,7 +78,7 @@ const Subscribe = () => {
                 name="instagram"
                 checked={subscriptionData.instagram}
                 onChange={handleInputChange}
-                className="form-checkbox text-black"
+                className="form-checkbox text-black myCheckbox"
               />
               <span className="text-black hover:underline ml-2">Instagram</span>
             </label>
@@ -87,7 +87,7 @@ const Subscribe = () => {
             <input
               type="text"
               placeholder="subscribe@trendoo.com"
-              className="input p-2 rounded-xl"
+              className="input p-2 rounded-xl myCheckbox"
               name="email"
               value={subscriptionData.email}
               onChange={handleInputChange}
