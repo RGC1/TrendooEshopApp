@@ -15,6 +15,8 @@ Trendoo was invented as a trendy, avant-garde fashion label known for its innova
 
 ## Development
 
+Deployed app: https://trendoo.netlify.app/
+
 This app was created using:
 - [React](https://react.dev/), a Javascript library;
 - [Vite](https://vitejs.dev/), a build tool for React;
