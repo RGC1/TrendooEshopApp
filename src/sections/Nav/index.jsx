@@ -135,9 +135,8 @@ const MyNav = () => {
           </div>
         </div>
       </nav>
-
-      {/* Mobile Menu */}
-      <div id='drop'
+{/* Mobile Menu */}
+<div id='drop'
         className={`${menuOpen ? "block mobileMenu" : "hidden"
           } sm:hidden`}
       >
