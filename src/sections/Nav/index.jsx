@@ -49,7 +49,7 @@ const MyNav = ({ favorites }) => {
   return (
     <>
       <nav id="nav">
-        <div className="dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b">
+        <div className="dark:bg-gray-900 w-full z-20 top-0 start-0 border-b">
           <div className="relative flex items-center justify-between h-16">
             <div >
               <a href="/" className="flex items-end mt-6 ml-6">
