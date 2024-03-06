@@ -42,7 +42,7 @@ const MyNav = ({favorites}) => {
           <div className="relative flex items-center justify-between h-16">
             <div >
               <a href="/" className="flex items-end mt-6">
-                <img src={logo} alt="logo" height={250} width={250} />
+              <img src={logo} alt="logo" height="50%" width="50%" />
               </a>
             </div>
             <div className="hidden sm:block sm:ml-6 mt-6">
@@ -103,13 +103,13 @@ const MyNav = ({favorites}) => {
             {/* Favorite Button */}
             <a href="" className="text-lg" onClick={(e) => DisplayFavoriteItems(!displayFavorites, e)}>
         {/* Favorite button icon */}
-              <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
+              <svg className="h-6 w-6 fill-current mt-5" viewBox="0 0 24 24">
                 <path d="M12 21.35l-1.45-1.32C5.4 15.72 2 12.32 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.82-3.4 7.22-8.55 11.53L12 21.35z" />
               </svg>
             </a>
             {/* Display favorited items list */}
       {displayFavorites && (
-        <div className="absolute top-14 right-0 bg-white w-48 mt-2 p-2 rounded-md shadow-md">
+        <div className="absolute top-4 right-0 bg-white w-48 mt-2 p-2 rounded-md shadow-md">
           <h2 className="text-lg font-bold mb-2">Favorited Items</h2>
           <ul>
             {/* Iterate favorited items and display */}
@@ -125,7 +125,7 @@ const MyNav = ({favorites}) => {
                 className="focus:outline-none"
               >
                 <svg
-                  className="h-6 w-6"
+                  className="h-6 w-8 mt-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"

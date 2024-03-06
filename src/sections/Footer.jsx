@@ -2,13 +2,13 @@ import logo from '../assets/images/Trendoo.png'
 
 const Footer = () => {
   return (
-    <footer id="footer" className="bg-[#545454] py-16">
-      <div className="container max-sm:mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 px-12">
-        <div>
+    <footer id="footer" className="bg-[#545454] py-6">
+      <div className="container grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-10 px-12">
+        <div className=''>
           <a href="/">
             {/* <img src={logo} alt="" width={250} height={46} /> */}
           </a>
-          <a href="/" className="ml-4">
+          <a href="/" className="ml-2">
             <img src={logo} alt="logo" height={221} width={221} />
           </a>
         </div>
@@ -45,7 +45,7 @@ const Footer = () => {
           <ul className="flex flex-col gap-6 ">
             <li><a href="tel:+440123456789" className=" pr-2 text-white" style={{ textDecoration: 'none' }}>Tel. +440123 456 789</a></li>
             <li><a href="mailto:info@trendoo.com" className=" pr-2 text-white" style={{ textDecoration: 'none' }}>E. info@trendoo.com</a></li>
-            <li className="text-white"><span className="pr-2">A.</span> Unit 7, 109, Charing Cross Rd, London, UK</li>
+            <li className="text-white" ><span className="pr-2">A.</span>Unit 7, 109, Charing Cross Rd, London, UK</li>
           </ul>
         </div>
 

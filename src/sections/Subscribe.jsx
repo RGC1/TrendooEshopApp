@@ -42,13 +42,14 @@ const Subscribe = () => {
 
   return (
 
-    <section id="contact-us" className="bg-[#f8f6f2] container max-sm:mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 px-12">
+    <section id="contact-us" className="bg-[#f8f6f2] container max-sm:mt-12 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-4 px-12">
       <div>
         <h3 className="text-4xl leading-[68px] text-center font-bold text-black" id="about">
           About Us
         </h3>
-        <p className='text-center p-2'>
-          Trendoo was invented as a trendy, avant-garde fashion label known for its innovative designs and cutting-edge styles. We are a group of five passionate students dedicated to honing our skills in Front End Web Development. Our mission is to provide a seamless online shopping experience for individuals who appreciate quality and unique clothing options. Explore our collection of comfortable attire tailored for both women and men. Select your favorite items and proceed to the store to make your purchase while they're still in stock.
+        <p className='text-justify p-2'>
+          Trendoo was invented as a trendy, avant-garde fashion label known for its innovative designs and cutting-edge styles.
+        <br></br> We are a group of five passionate students dedicated to honing our skills in Front End Web Development. Our mission is to provide a seamless online shopping experience for individuals who appreciate quality and unique clothing options. Explore our collection of comfortable attire tailored for both women and men. 
         </p>
       </div>
       <div>
