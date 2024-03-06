@@ -111,7 +111,7 @@ const Footer = () => {
          {/* Scroll to top btn */}
         <a
           href="#"
-          className="fixed bottom-4 right-4 bg-gray-800 text-white p-2 rounded-full shadow-md transition duration-300 hover:bg-gray-700 hover:text-gray-200"
+          className="fixed bottom-4 right-4 bg-gray-800 text-white p-2 mr-2 rounded-full shadow-md transition duration-300 hover:bg-gray-700 hover:text-gray-200"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
