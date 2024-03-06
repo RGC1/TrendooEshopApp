@@ -83,7 +83,7 @@ const MyNav = ({ favorites }) => {
                     onMouseEnter={openDropdown}
                     onMouseLeave={closeDropdown}
                     style={{
-                      left: "53.5%",
+                      left: "58%",
                     }}
                   >
                     <ul
