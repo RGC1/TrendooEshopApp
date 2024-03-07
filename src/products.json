@@ -3,7 +3,7 @@
     "id": 1,
     "item": "Chenille T-shirt",
     "description": "A boxy tee made from super soft chenille - 100% Polyester",
-    "image": "/images/Women/Tshirts/t-shirtWomen1.jpg",
+    "image": "../src/assets/images/Women/Tshirts/t-shirtWomen1.jpg",
     "price": 10.00,
     "category": "women",
     "subcategory": "tshirt"
@@ -260,7 +260,7 @@
 },
 {
   "id": 28,
-  "item": "Chenille T-shirt",
+  "item": "The Edit Crew Neck T-shirt",
   "description": "A boxy tee made from super soft chenille - 100% Polyester",
   "image": "../src/assets/images/Women/Tshirts/t-shirtWomen7.jpg",
   "price": 10.00,
@@ -269,8 +269,8 @@
 },
 {
   "id": 29,
-  "item": "Chenille T-shirt",
-  "description": "A boxy tee made from super soft chenille - 100% Polyester",
+  "item": "Boxy T-shirt",
+  "description": "Summertime means T-shirts on repeat! - 100% Polyester",
   "image": "../src/assets/images/Women/Tshirts/t-shirtWomen8.jpg",
   "price": 10.00,
   "category": "women",
@@ -278,8 +278,8 @@
 },
 {
   "id": 30,
-  "item": "Chenille T-shirt",
-  "description": "A boxy tee made from super soft chenille - 100% Polyester",
+  "item": "2pk Stretch T-shirts",
+  "description": "We think you can coordinate an outfit with this tee - 100% Polyester",
   "image": "../src/assets/images/Women/Tshirts/t-shirtWomen9.jpg",
   "price": 10.00,
   "category": "women",
@@ -287,11 +287,39 @@
 },
 {
   "id": 31,
-  "item": "Chenille T-shirt",
-  "description": "A boxy tee made from super soft chenille - 100% Polyester",
+  "item": "Ribbed Scoop Neck Cropped T-Shirt",
+  "description": "This baby tee is one piece you'll want to scoop into your basket! - 100% Polyester",
   "image": "../src/assets/images/Women/Tshirts/t-shirtWomen10.jpg",
   "price": 10.00,
   "category": "women",
   "subcategory": "tshirt"
+},
+{
+  "id": 32,
+  "item": "Victoriana Blouse",
+  "description": "Exquisite doesn’t come close with our Victoriana blouse! - 100% Polyester",
+  "image": "../src/assets/images/Women/Blouser/blouser2.jpg",
+  "price": 10.00,
+  "category": "women",
+  "subcategory": "blouser"
+},
+{
+  "id": 33,
+  "item": "Shirred Blouse",
+  "description": "No matter the occasion, this stylish blouse is the top choice! - 100% Polyester",
+  "image": "../src/assets/images/Women/Blouser/blouser3.jpg",
+  "price": 10.00,
+  "category": "women",
+  "subcategory": "blouser"
+},
+{
+  "id": 34,
+  "item": "Ruffle Blouse",
+  "description": "You can count on this striped blouse to be a smart-casual staple! - 100% Polyester",
+  "image": "../src/assets/images/Women/Blouser/blouser4.jpg",
+  "price": 10.00,
+  "category": "women",
+  "subcategory": "blouser"
 }
+
 ]
