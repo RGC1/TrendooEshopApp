@@ -91,7 +91,7 @@
     "id": 10,
     "item": "Performance Blouser Chic",
     "description": "Slay your next workout class with this sleek sports bra! - Polyester 87% Elastane 13%",
-    "image": "../src/assets/images/Women/Blouser/blouser1.jpg",
+    "image": "./images/Women/Blouser/blouser1.jpg",
     "price": 22.00,
     "category": "women",
     "subcategory": "blouser"
