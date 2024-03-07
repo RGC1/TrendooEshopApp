@@ -9,7 +9,7 @@ const Footer = () => {
             {/* <img src={logo} alt="" width={250} height={46} /> */}
           </a>
           <a href="/" className="ml-4">
-            <img src={logo} alt="logo" height={221} width={221} />
+            <img src={logo} alt="logo" height={275} width={275} />
           </a>
         </div>
 
@@ -49,7 +49,7 @@ const Footer = () => {
 
         <div>
           <h4 className="font-bold mb-8 text-white">PRODUCTS GALLERY</h4>
-          <ul className="flex flex-wrap gap-4">
+          <ul >
             <li>
               <a
                 href="#sectionWomen"
@@ -103,8 +103,8 @@ const Footer = () => {
               </a>
             </li>
             <li className="text-white">
-              <span className="pr-2">A.</span> Unit 7, 109, Charing Cross Rd,
-              London, UK
+              <span className="pr-2">A. Unit 7, 109, Charing Cross Road, 
+              London, UK</span>
             </li>
           </ul>
         </div>
