@@ -8,12 +8,12 @@ const Hero = () => {
         <h1 className="home-1 md:text-[3.5rem] text-[2rem]">
           Dress to Impress <br></br>
           <span className="md:text-[3.5rem] text-[2.5rem] font-[600] font-sans-serif italic">
-            Collection!
+          Happy Clothes Collection!
           </span>
         </h1>
-        <h1 className="home-2 md:text-[3.5rem] text-[2.5rem] font-[600] font-sans-serif italic">
+       {/* <h1 className="home-2 md:text-[3.5rem] text-[2.5rem] font-[600] font-sans-serif italic">
           Happy clothes
-        </h1>
+  </h1>*/}
         <p className="home-3  text-[1.5rem]">
           Find happiness in every piece and express your unique style
         </p>
