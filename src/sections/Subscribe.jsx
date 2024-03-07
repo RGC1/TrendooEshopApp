@@ -78,7 +78,8 @@ const Subscribe = () => {
       <div>
         <h3 className="text-4xl leading-[68px] ml-8 text-center font-bold text-black" id="subscribe">
           Connect with us on
-          <span className="text-[#c1ff72] text-4xl leading-[68px] text-center font-bold"> Social Media</span>
+          <span className="text-[#c1ff72] text-4xl leading-[68px] text-center font-bold"
+          style={{ textShadow: '2px 2px 0px black' }}> Social Media</span>
         </h3>
 
         <div className="lg:max-w-[100%] w-full flex items-center flex-col gap-5 p-2.5 sm:border sm:border-slate-gray rounded-full">
