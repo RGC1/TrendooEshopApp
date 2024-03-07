@@ -3,7 +3,7 @@ import logo from "../assets/images/Trendoo.png";
 const Footer = () => {
   return (
     <footer id="footer" className="bg-[#545454] py-16">
-      <div className="container max-sm:mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 px-12">
+      <div className="container max-sm:mt-12 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-4 px-12">
         <div>
           <a href="/">
             {/* <img src={logo} alt="" width={250} height={46} /> */}
