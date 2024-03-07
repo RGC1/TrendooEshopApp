@@ -60,19 +60,19 @@ const MyNav = ({ favorites }) => {
               <div className="flex space-x-6">
                 <a
                   href="#home"
-                  className="rounded-md px-2 py-2 text-md font-medium"
+                  className="rounded-md px-2 py-2 text-lg font-medium"
                 >
                   HOME
                 </a>
                 <a
                   href="#about"
-                  className=" px-5 py-2 text-md font-medium"
+                  className=" px-5 py-2 text-lg font-medium"
                 >
                   ABOUT US
                 </a>
                 <button
                   onMouseEnter={openDropdown}
-                  className="rounded-md px-5 py-2 text-md font-medium bg-[#545454] "
+                  className="rounded-md px-5 py-2 text-lg font-medium bg-[#545454] "
                 >
                   PRODUCTS
                 </button>
@@ -105,7 +105,7 @@ const MyNav = ({ favorites }) => {
                 )}
                 <a
                   href="#footer"
-                  className="rounded-md px-3 py-2 text-md font-medium"
+                  className="rounded-md px-3 py-2 text-lg font-medium"
                 >
                   CONTACT US
                 </a>
