@@ -3,7 +3,7 @@
     "id": 1,
     "item": "Chenille T-shirt",
     "description": "A boxy tee made from super soft chenille - 100% Polyester",
-    "image": "../src/assets/images/Women/Tshirts/t-shirtWomen1.jpg",
+    "image": "./images/Women/Tshirts/t-shirtWomen1.jpg",
     "price": 10.00,
     "category": "women",
     "subcategory": "tshirt"
@@ -54,7 +54,7 @@
     "id": 6,
     "item": "Crewneck Boxy",
     "description": "Take your everyday essentials to a new level with this stretch T-shirt - 100% Cotton ",
-    "image": "../src/assets/images/Women/Shirts/shirtWomen1.jpg",
+    "image": "./images/Women/Shirts/shirtWomen1.jpg",
     "price": 14.00,
     "category": "women",
     "subcategory": "shirt"
@@ -63,7 +63,7 @@
     "id": 7,
     "item": "Paula Echevarría Padded Racer Vest",
     "description": "Add a supportive touch to your casual wardrobe with our padded vest! - 96% Cotton, 4% Elastane",
-    "image": "../src/assets/images/Women/Shirts/shirtWomen2.jpg",
+    "image": "./images/Women/Shirts/shirtWomen4.jpg",
     "price": 13.00,
     "category": "women",
     "subcategory": "shirt",
@@ -73,7 +73,7 @@
     "id": 8,
     "item": "Oversized Graphic",
     "description": "This tee smells like a style statement to us! - 100% Cotton",
-    "image": "../src/assets/images/Women/Shirts/shirtWomen3.jpg",
+    "image": "./images/Women/Shirts/shirtWomen3.jpg",
     "price": 17.00,
     "category": "women",
     "subcategory": "shirt"
@@ -82,7 +82,7 @@
     "id": 9,
     "item": "2pk Stretch Vests",
     "description": "Time to refresh your vests! - 95% Cotton, 5% Elastane",
-    "image": "../src/assets/images/Women/Shirts/shirtWomen4.jpg",
+    "image": "./images/Women/Shirts/shirtWomen2.jpg",
     "price": 20.00,
     "category": "women",
     "subcategory": "shirt"
@@ -253,7 +253,7 @@
   "id": 27,
   "item": "Chenille T-shirt",
   "description": "A boxy tee made from super soft chenille - 100% Polyester",
-  "image": "../src/assets/images/Women/Tshirts/t-shirtWomen6.jpg",
+  "image": "./images/Women/Tshirts/t-shirtWomen6.jpg",
   "price": 10.00,
   "category": "women",
   "subcategory": "tshirt"
@@ -262,7 +262,7 @@
   "id": 28,
   "item": "The Edit Crew Neck T-shirt",
   "description": "A boxy tee made from super soft chenille - 100% Polyester",
-  "image": "../src/assets/images/Women/Tshirts/t-shirtWomen7.jpg",
+  "image": "./images/Women/Tshirts/t-shirtWomen7.jpg",
   "price": 10.00,
   "category": "women",
   "subcategory": "tshirt"
@@ -271,7 +271,7 @@
   "id": 29,
   "item": "Boxy T-shirt",
   "description": "Summertime means T-shirts on repeat! - 100% Polyester",
-  "image": "../src/assets/images/Women/Tshirts/t-shirtWomen8.jpg",
+  "image": "./images/Women/Tshirts/t-shirtWomen8.jpg",
   "price": 10.00,
   "category": "women",
   "subcategory": "tshirt"
@@ -280,7 +280,7 @@
   "id": 30,
   "item": "2pk Stretch T-shirts",
   "description": "We think you can coordinate an outfit with this tee - 100% Polyester",
-  "image": "../src/assets/images/Women/Tshirts/t-shirtWomen9.jpg",
+  "image": "./images/Women/Tshirts/t-shirtWomen9.jpg",
   "price": 10.00,
   "category": "women",
   "subcategory": "tshirt"
@@ -289,7 +289,7 @@
   "id": 31,
   "item": "Ribbed Scoop Neck Cropped T-Shirt",
   "description": "This baby tee is one piece you'll want to scoop into your basket! - 100% Polyester",
-  "image": "../src/assets/images/Women/Tshirts/t-shirtWomen10.jpg",
+  "image": "./images/Women/Tshirts/t-shirtWomen10.jpg",
   "price": 10.00,
   "category": "women",
   "subcategory": "tshirt"
@@ -298,7 +298,7 @@
   "id": 32,
   "item": "Victoriana Blouse",
   "description": "Exquisite doesn’t come close with our Victoriana blouse! - 100% Polyester",
-  "image": "../src/assets/images/Women/Blouser/blouser2.jpg",
+  "image": "./images/Women/Blouser/blouser2.jpg",
   "price": 10.00,
   "category": "women",
   "subcategory": "blouser"
@@ -307,7 +307,7 @@
   "id": 33,
   "item": "Shirred Blouse",
   "description": "No matter the occasion, this stylish blouse is the top choice! - 100% Polyester",
-  "image": "../src/assets/images/Women/Blouser/blouser3.jpg",
+  "image": "./images/Women/Blouser/blouser3.jpg",
   "price": 10.00,
   "category": "women",
   "subcategory": "blouser"
@@ -316,7 +316,7 @@
   "id": 34,
   "item": "Ruffle Blouse",
   "description": "You can count on this striped blouse to be a smart-casual staple! - 100% Polyester",
-  "image": "../src/assets/images/Women/Blouser/blouser4.jpg",
+  "image": "./images/Women/Blouser/blouser4.jpg",
   "price": 10.00,
   "category": "women",
   "subcategory": "blouser"
