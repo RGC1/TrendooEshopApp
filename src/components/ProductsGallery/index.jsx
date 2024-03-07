@@ -136,7 +136,7 @@ const ProjectGallery = ({ onToggleFavorite, favoriteMap }) => {
 
         {/* Most Popular Section: map over the items with bestseller value to display them in this section*/}
         <div className="section" id="sectionMostPopular">
-          <h2 className="titleProducts flex flex-wrap justify-center">Most Popular</h2>
+          <h2 className="titleProducts flex flex-wrap justify-center text-center">Most Popular</h2>
           <div className="flex flex-wrap justify-center">
             {popularProducts.map((product) => (
               <ProductCard key={product.id} product={product} onToggleFavorite={() => onToggleFavorite(product.id)}
@@ -148,7 +148,7 @@ const ProjectGallery = ({ onToggleFavorite, favoriteMap }) => {
 
         {/* Women's Section */}
         <div className="section" id="sectionWomen">
-          <h2 className="titleProducts flex flex-wrap justify-center">Women's Products</h2>
+          <h2 className="titleProducts flex flex-wrap justify-center text-center">Women's Products</h2>
 
           {/* Filters for women products */}
           <div className="flex justify-center mt-4">
@@ -217,7 +217,7 @@ const ProjectGallery = ({ onToggleFavorite, favoriteMap }) => {
 
         {/* Men's Section */}
         <div className="section" id="sectionMen">
-          <h2 className="titleProducts flex flex-wrap justify-center">Men's Products</h2>
+          <h2 className="titleProducts flex flex-wrap justify-center text-center">Men's Products</h2>
 
           {/* Filters for men products */}
           <div className="flex justify-center mt-4">
