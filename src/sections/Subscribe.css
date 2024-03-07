@@ -2,4 +2,8 @@
   .inputSubscribe input {
     margin-bottom: 10px;
   }
+
+  #subscribe {
+    margin: 0;
+  }
 }

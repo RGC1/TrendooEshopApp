@@ -50,7 +50,7 @@ const MyNav = ({ favorites }) => {
     <>
       <nav id="nav">
         <div className="dark:bg-gray-900 w-full z-20 top-0 start-0 border-b">
-          <div className="relative flex items-center justify-between h-16">
+          <div className="relative flex items-center justify-between h-16 mr-5">
             <div >
               <a href="/" className="flex items-end mt-6 ml-6">
                 <img src={logo} alt="logo" height="50%" width="50%" />
@@ -83,7 +83,7 @@ const MyNav = ({ favorites }) => {
                     onMouseEnter={openDropdown}
                     onMouseLeave={closeDropdown}
                     style={{
-                      left: "58%",
+                      left: "57%",
                     }}
                   >
                     <ul
@@ -120,7 +120,7 @@ const MyNav = ({ favorites }) => {
             </a>
             {/* Display favorited items list */}
             {displayFavorites && (
-              <div className="absolute top-14 right-0 bg-white w-80 mt-2 p-2 rounded-md shadow-md z-10">
+              <div className="absolute top-14 right-0 bg-white w-80 mt-8 p-2 rounded-md shadow-md z-10">
                 <h2 className="text-lg font-bold mb-2">Favorited Items</h2>
                 <ul>
                   {favorites.map((favorite) => (
@@ -169,7 +169,7 @@ const MyNav = ({ favorites }) => {
         className={`${menuOpen ? "block mobileMenu" : "hidden"
           } sm:hidden`}
       >
-        <div className=" pt-2 pb-3 space-y-1">
+        <div className=" pt-2 pb-3 space-y-1 ml-3">
           <a
             href="#home"
             className="block px-3 py-2 text-white font-small "
